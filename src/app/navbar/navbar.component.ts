@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   img='assets/images/Home-1.jpg'
+  rightarrow='assets/images/right-arrow.gif'
   
   
 }
