@@ -1,0 +1,26 @@
+a{
+    color: grey;
+    
+}
+a:hover{
+    color: rgb(255, 252, 252);
+    
+}
+
+
+#ace{
+     
+    font-family: 'Courier New', monospace;
+    padding-bottom: 2%;
+    padding-top: 3%;
+    padding-left: 62%;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+li{
+    margin: 0 1em;
+    
+}
