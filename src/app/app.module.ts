@@ -9,6 +9,13 @@ import { BadgeModule } from 'primeng/badge';
 import { CustompipePipe } from './custompipe.pipe';
 import { AcecraftComponent } from './acecraft/acecraft.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { CollegeComponent } from './college/college.component';
+import { EnterpriseComponent } from './enterprise/enterprise.component';
+import { NotesComponent } from './notes/notes.component';
+import { AirenComponent } from './airen/airen.component';
+import { CartComponent } from './cart/cart.component';
+
 
 @NgModule({
   declarations: [
@@ -17,14 +24,20 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     CustompipePipe,
     AcecraftComponent,
-    FooterComponent
+    FooterComponent,
+    CollegeComponent,
+    EnterpriseComponent,
+    NotesComponent,
+    AirenComponent,
+    CartComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MegaMenuModule,
     BadgeModule,
-    
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
