@@ -1,0 +1,19 @@
+
+.footer {
+    background-color: black;
+    padding: 2em 0 1em 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(149, 149, 149);
+}
+
+.footer .col-2 {
+    border-right: solid white .1em;
+    text-align: center;
+}
+
+.footer a:hover {
+    color: white;
+}

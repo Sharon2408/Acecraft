@@ -1,0 +1,33 @@
+.banner {
+    position: relative;
+}
+
+.text {
+    
+ 
+    position: absolute;
+    margin-top: -225px;
+    margin-left: 500px ;
+    color: grey;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 47px;
+    
+}
+
+.college{
+    position:absolute;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 575px;
+    margin-left: -770px ;
+}
+
+.card1-text{
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 400px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 100px;
+    width: 340px;
+    
+}

@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { SchoolComponent } from './school/school.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BadgeModule } from 'primeng/badge';
+import { CustompipePipe } from './custompipe.pipe';
+import { AcecraftComponent } from './acecraft/acecraft.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SchoolComponent,
-    NavbarComponent
+    NavbarComponent,
+    CustompipePipe,
+    AcecraftComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
