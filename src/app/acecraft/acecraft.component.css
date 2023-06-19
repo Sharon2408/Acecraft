@@ -18,8 +18,9 @@
     position:absolute;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    margin-top: 575px;
+    margin-top: 550px;
     margin-left: -770px ;
+    font-weight: bolder;
 }
 
 .card1-text{
@@ -30,4 +31,13 @@
     height: 100px;
     width: 340px;
     
+}
+
+.homecard{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: -100px;
+    text-decoration: none;
+    color: white;
+   font-weight: bolder;
 }

@@ -6,7 +6,7 @@
                 <ul class="navbar-nav" >
                     <ng-container *ngFor="let nav of nav">  
                     <li class="nav-item" *ngIf="nav.navitem">
-                        <a class="nav-link " aria-current="page" [routerLink]="nav.routerLink">{{nav.navitem | uppercase}}</a>  
+                        <a class="nav-link text-decoration" aria-current="page" [routerLink]="nav.routerLink">{{nav.navitem | uppercase}}</a>  
                     </li>
                     <li class="nav-item ">
                         <a *ngIf="!nav.navitem" class="nav-link " [routerLink]="nav.routerLink"  aria-disabled="true"><i [ngClass]='nav.icon'
