@@ -1,29 +1,13 @@
-<section class="footer">
+<section class="footer ">
     <div class="container">
-        <div class="row justify-content-center pb-4">
-            <div class="d-flex justify-content-center">
-                <img [src]="facebook" class="me-2">
-                <img [src]="instagram" alt="" class="me-2">
-                <img [src]="linkedin" alt="" class="me-2">
-                
+        <div class="d-flex justify-content-center pb-4">
+            <div class="" *ngFor="let icon of icons">
+              <a [href]="icon.link">  <img class="" [src]="icon.icon"></a>
             </div>
         </div>
         <div class="row">
-            <div class="col-2">
-
-                <a href="#">ABOUT</a>
-            </div>
-            <div class="col-2">
-                <a href="#">CARE</a></div>
-            <div class="col-2"><a href="#">RETURNS</a></div>
-            <div class="col-2">
-                <a href="#">PRODUCTION</a>
-            </div>
-            <div class="col-2">
-                <a href="#">TERMS</a>
-            </div>
-            <div class="col-2 border-0">
-                <a href="#">GET HELP</a>
+            <div class="col-2" *ngFor="let foot of footer">
+                <a [routerLink]="">{{foot.name | uppercase}}</a>
             </div>
         </div>
     </div>

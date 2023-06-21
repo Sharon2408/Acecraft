@@ -1,1 +1,19 @@
-<h1 class="text-center fw-bolder">Blogs</h1>
+<h1 class="text-center fw-bolder text-black p-4">Blogs</h1>
+
+<div class="container">
+    <div class="row g-5">
+        <ng-container *ngFor="let card of cards">
+            <div class="col-6 ">
+
+                <div class="card flex justify-content-center bg-white">
+
+                    <a [routerLink]="card.routerLink" class="text-decoration-none">
+                        <p class="bg-black text-white text-center pcard ">{{card.name | uppercase}}</p>
+                    </a>
+
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
+<br><br><br>

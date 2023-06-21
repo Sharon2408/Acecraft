@@ -15,7 +15,8 @@ import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { NotesComponent } from './notes/notes.component';
 import { AirenComponent } from './airen/airen.component';
 import { CartComponent } from './cart/cart.component';
-
+import { CardModule } from 'primeng/card';
+import { NoteCard1Component } from './note-card1/note-card1.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CartComponent } from './cart/cart.component';
     NotesComponent,
     AirenComponent,
     CartComponent,
+    NoteCard1Component,
   
   ],
   imports: [
@@ -37,7 +39,8 @@ import { CartComponent } from './cart/cart.component';
     AppRoutingModule,
     MegaMenuModule,
     BadgeModule,
-    FormsModule
+    FormsModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,16 @@
+.bg1{
+    background-size: cover;
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/School-1.jpg);
+    background-position: center 122px;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+.bg2{
+    background-size: cover;
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/School-2.jpg);
+    background-position: center 122px;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}

@@ -7,6 +7,7 @@ import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { NotesComponent } from './notes/notes.component';
 import { AirenComponent } from './airen/airen.component';
 import { CartComponent } from './cart/cart.component';
+import { NoteCard1Component } from './note-card1/note-card1.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,9 @@ const routes: Routes = [
   },
   {
     path:'cart',component:CartComponent
+  },
+  {
+    path:'note-card1',component:NoteCard1Component
   }
  
 ];
