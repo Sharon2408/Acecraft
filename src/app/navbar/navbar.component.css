@@ -2,14 +2,16 @@
 
 a {
     color: grey;
-
+    text-decoration: none;
 }
+
 #navitem:focus{
     border-bottom: solid gray .1em;
+    text-decoration: none;
 }
 a:hover {
     color: rgb(255, 252, 252);
-
+    text-decoration: none;
 }
 
 

@@ -1,17 +1,24 @@
 <div class="container-fluid bg1">
-    <div class="row">
-        <section>
-            <div class="col bg1">
-
-            </div>
-        </section>
-        <div class="col bg2">
-
-        </div>
-<div class="bg-black" style="height: 300px;">
-
-</div>
-
+  <div class="row">
+    <div class="col d-flex" style="background-color: white">
+      <ng-container *ngFor="let school of school">
+        <img class="img" [src]="school.img" alt="" height="55px" />
+      </ng-container>
     </div>
+    <section>
+      <div class="col bg1">
+        <h1 class="text-center">Designer uniforms <b>for the doers</b></h1>
+        <i class="fa-solid fa-angle-down fa-beat fa-xl"></i>
+        </div> 
+        <div class="col c fw-bolder ">
+            <h1 class="row top" style="text-align: center;background-color: rgb(225, 15, 15); height: 500px;">
+                Aesthetically advanced,<br />
+                our designer uniforms are a cut above the rest,<br />
+                in every sense of the word.
+              </h1>
+          </div>
+    </section>
+
+    <div class="col bg2"></div>
+  </div>
 </div>
-<br><br><br><br>

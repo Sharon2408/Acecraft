@@ -14,3 +14,23 @@
     min-height: 100vh;
     background-repeat: no-repeat;
 }
+
+.img{
+      margin-left:120px;
+    margin-top: 20px; 
+}
+.top{
+    padding-left: 18%;
+}
+.c{
+    color: #978F8F;
+}
+h1{
+    color: #978F8F;
+    margin-top: 26%;
+}
+
+i{
+    color: #978F8F;
+margin-left: 50%;    
+}
