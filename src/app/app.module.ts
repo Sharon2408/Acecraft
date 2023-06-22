@@ -17,6 +17,10 @@ import { AirenComponent } from './airen/airen.component';
 import { CartComponent } from './cart/cart.component';
 import { CardModule } from 'primeng/card';
 import { NoteCard1Component } from './note-card1/note-card1.component';
+import { StylingAccessoriesThatComplementYourFormalWearComponent } from './notes/styling-accessories-that-complement-your-formal-wear/styling-accessories-that-complement-your-formal-wear.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +36,8 @@ import { NoteCard1Component } from './note-card1/note-card1.component';
     AirenComponent,
     CartComponent,
     NoteCard1Component,
+    StylingAccessoriesThatComplementYourFormalWearComponent,
+    FeedbackFormComponent,
   
   ],
   imports: [
@@ -40,7 +46,8 @@ import { NoteCard1Component } from './note-card1/note-card1.component';
     MegaMenuModule,
     BadgeModule,
     FormsModule,
-    CardModule
+    CardModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

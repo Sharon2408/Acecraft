@@ -1,0 +1,73 @@
+<hr class="" style=" width: 80%; margin-left: 10%;">
+<div class="container">
+    <div class="row">
+        <h2 class="text-secondary p-3">{{val}} Comments</h2>
+    </div>
+</div>
+<hr class="" style=" width: 80%; margin-left: 10%;">
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-secondary">Leave a Comment</h2>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="col">
+        <form [formGroup]="myForm1" (ngSubmit)=" myForm1.valid && onSubmit(myForm1)" novalidate>
+            <div class="form-group">
+                <br>
+              <label class="text-secondary fw-bolder">Name</label>
+          
+              <input  type="text" class="form-control " placeholder="Name" formControlName="username" [ngClass]="{
+                    'is-invalid':
+                      username.errors && (username.touched || username.dirty ) ,
+                    'is-valid': username.valid
+                  }"  />
+              <!--using visual feedback-->
+              <div class="invalid-feedback">
+                <!--*ngIf Directive-->
+                <small *ngIf=" username.errors?.required">Username is required</small>
+                <small *ngIf="username.errors?.minlength">Username length must be greater than
+                  {{ username.errors?.minlength.requiredLength }} characters.
+                  {{username.errors?.minlength.requiredLength - username.errors?.minlength.actualLength}}more characters required.
+                </small>
+                <small *ngIf="username.errors?.maxlength">Username length must be less than 17 characters
+                </small>
+              </div>
+              <br>
+              <label class="text-secondary fw-bolder">Email</label>
+          
+              <input type="email" class="form-control" placeholder="Email" formControlName="email" [ngClass]="{
+                    'is-invalid':
+                      email.errors && (email.touched || email.dirty),
+                    'is-valid': email.valid
+                  }" />
+          
+              <div class="invalid-feedback">
+                <small *ngIf="email.errors?.required">Email is required</small>
+          
+              </div>
+              <br>
+              <label for="exampleFormControlTextarea1" class="text-secondary fw-bolder">Message</label>
+              <textarea class="form-control" formControlName="feedback" placeholder="Your Comment" id="exampleFormControlTextarea1" [ngClass]="{
+                'is-invalid':
+                  feedback.errors && (feedback.touched || feedback.dirty),
+                'is-valid': feedback.valid
+              }" rows="3"></textarea>
+              
+              <div class="invalid-feedback">
+                <small *ngIf="feedback.errors?.required">Please type 5 to 10 words</small>
+          
+              </div>
+              <br>
+              <div class="form-group">
+                <button type="submit" [disabled]="myForm1.invalid" class="btn btn-dark btn-block">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+    </div>
+</div>

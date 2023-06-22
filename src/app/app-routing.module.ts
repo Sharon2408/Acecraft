@@ -8,37 +8,51 @@ import { NotesComponent } from './notes/notes.component';
 import { AirenComponent } from './airen/airen.component';
 import { CartComponent } from './cart/cart.component';
 import { NoteCard1Component } from './note-card1/note-card1.component';
+import { StylingAccessoriesThatComplementYourFormalWearComponent } from './notes/styling-accessories-that-complement-your-formal-wear/styling-accessories-that-complement-your-formal-wear.component';
 
 const routes: Routes = [
   {
-    path:'school',component:SchoolComponent
+    path: 'school',
+    component: SchoolComponent,
   },
   {
-    path:'',component:AcecraftComponent
+    path: '',
+    component: AcecraftComponent,
   },
   {
-    path:'college',component:CollegeComponent
+    path: 'college',
+    component: CollegeComponent,
   },
   {
-    path:'enterprise',component:EnterpriseComponent
+    path: 'enterprise',
+    component: EnterpriseComponent,
   },
   {
-    path:'notes',component:NotesComponent
+    path: 'notes',
+    component: NotesComponent,
+    children: [
+      {
+        path: 'notessub1/:id',
+        component: StylingAccessoriesThatComplementYourFormalWearComponent,
+      },
+    ],
   },
   {
-    path:'airen',component:AirenComponent
+    path: 'airen',
+    component: AirenComponent,
   },
   {
-    path:'cart',component:CartComponent
+    path: 'cart',
+    component: CartComponent,
   },
   {
-    path:'note-card1',component:NoteCard1Component
-  }
- 
+    path: 'note-card1',
+    component: NoteCard1Component,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
