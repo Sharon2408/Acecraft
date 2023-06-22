@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MegaMenuModule } from 'primeng/megamenu';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,17 @@ import { NoteCard1Component } from './note-card1/note-card1.component';
 import { StylingAccessoriesThatComplementYourFormalWearComponent } from './notes/styling-accessories-that-complement-your-formal-wear/styling-accessories-that-complement-your-formal-wear.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
+import { ToggleButtonModule } from 'primeng/togglebutton';
+import { SlideMenuModule } from 'primeng/slidemenu';
+import { SliderModule } from 'primeng/slider';
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
+import { AnimateModule } from 'primeng/animate';
+
+
+
+
+
 
 
 @NgModule({
@@ -47,7 +59,16 @@ import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
     BadgeModule,
     FormsModule,
     CardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToggleButtonModule,
+    SlideMenuModule,
+    SliderModule,
+    SidebarModule,
+    ButtonModule,
+   AnimateModule,
+   BrowserAnimationsModule
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

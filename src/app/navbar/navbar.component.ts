@@ -46,6 +46,7 @@ export class NavbarComponent {
       }
     ]
 
+    sidebarVisible: boolean = false;
 }
 
 

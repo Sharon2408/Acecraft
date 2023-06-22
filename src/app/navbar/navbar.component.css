@@ -1,5 +1,4 @@
 
-
 a {
     color: grey;
     text-decoration: none;
@@ -14,14 +13,16 @@ a:hover {
     text-decoration: none;
 }
 
+#toggle{
+    color: black !important;
+}
 
 #ace {
 
     font-family: 'Courier New', monospace;
     padding-top: 1%;
     color: rgb(255, 255, 255);
-    font-size: x-large;
-    font-weight: 700;
+    font-size: 30px;
     margin: 0%;
 
 }
@@ -35,18 +36,9 @@ nav .container-fluid {
     flex-direction: column;
 }
 
-
-li {
-    margin: 0 em;
-
-}
-
 ul li {
     display: inline-block;
     padding: 10px;
   }
-  
-  ul li.active {
-    border-bottom: 2px solid blue;
-  }
+
 

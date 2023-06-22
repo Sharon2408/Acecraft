@@ -1,50 +1,98 @@
 <div class="container-fluid bg1">
-    <div class="row">
-        <div class="col" style="background-color: white">
-            <ng-container *ngFor="let school of school">
-                <img class="img" [src]="school.img" alt="" height="55px" />
-            </ng-container>
-        </div>
-        <section>
-            <div class=" bg1">
-                <h1 class="text-center">Designer uniforms <b>for the doers</b></h1>
-                <i class="fa-solid fa-angle-down fa-beat fa-xl"></i>
-                <div class=" c fw-bolder ">
-                    <h1 class="row top">
-                        Aesthetically advanced,<br />
-                        our designer uniforms are a cut above the rest,<br />
-                        in every sense of the word.
-                    </h1>
-                </div>
-            </div>
-        </section>
-        <div class="col bg2">
-            <h1 class="text-center text-black">Perfection. Now <b>delivering to your doorstep.</b></h1>
-            <i class="fa-solid fa-angle-down fa-beat fa-xl text-black"></i>
-
-            <div>
-                <h1 class="text-black pad text-center fw-normal">Less <b>hassle</b>. More <b>hustle.</b> <br>
-                    Our end-to-end e-commerce facility with <br>
-                    <b>superior technology enables us to <br>
-                        deliver your order right to your doorstep.</b>
-                </h1>
-            </div>
-        </div>
+  <div class="row">
+    <div class="col" style="background-color: white">
+      <ng-container *ngFor="let school of school">
+        <img class="img" [src]="school.img" alt="" height="55px" />
+      </ng-container>
     </div>
+    <section>
+      <div class="bg1">
+        <h1 class="text-center">Designer uniforms <b>for the doers</b></h1>
+        <i class="fa-solid fa-angle-down fa-beat fa-xl"></i>
+        <div class="c fw-bolder">
+          <h1 class="row top">
+            Aesthetically advanced,<br />
+            our designer uniforms are a cut above the rest,<br />
+            in every sense of the word.
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="col bg2">
+      <h1 class="text-center text-black">
+        Perfection. Now <b>delivering to your doorstep.</b>
+      </h1>
+      <i class="fa-solid fa-angle-down fa-beat fa-xl text-black"></i>
+
+      <div>
+        <h1 class="text-black pad text-center fw-normal">
+          Less <b>hassle</b>. More <b>hustle.</b> <br />
+          Our end-to-end e-commerce facility with <br />
+          <b
+            >superior technology enables us to <br />
+            deliver your order right to your doorstep.</b
+          >
+        </h1>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="container-fluid" style="background-color: black;">
-    <div class="row ">
-        <div class="col">
-            <h1 class="text-end text-secondary">
-                Be at ease. <br>
-                Everyday.</h1>
-            <p class="text-end">
-                Our uniforms keep your children looking great <br>
-                from the first day of school until the end-of-the-year picnic.
-            </p>
-            <!-- <img src="http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/BK,.jpg" class="img-responsive "> -->
-        </div>
+<div class="container-fluid bg-black" >
+  <div class="row">
+    <div class="col">
+      <h1 class="text-end text-secondary pe-5 mt-5">
+        Be at ease. <br />
+        Everyday.
+        <p class="text-end pt-4 fs-4 text-secondary" style="">
+          Our uniforms keep your children looking great <br />
+          from the first day of school until the end-of-the-year picnic.
+        </p>
+      </h1>
     </div>
+  </div>
 </div>
-<br><br><br>
+<div class="bg-black">
+<div class="container" >
+  <div class="row">
+    <div class="col">
+      <img
+        src="http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/BK,.jpg"
+        class="img-responsive"
+      />  
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg3">
+  <div class="row">
+    <div class="col text-center  text-secondary ">
+      <h2>Designer Uniforms</h2>
+      <p class="by">by</p>
+      <p>a c e c r a f t</p>
+      <p>Establish a signature look for your school.</p>
+      <p>Looking to change your supplier?</p>
+     <a><p class="text-white button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get In Touch</p></a> 
+  </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
