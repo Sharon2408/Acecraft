@@ -1,51 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { ServiceService } from 'src/Services/service.service';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
 
-  nav: any[] =
-    [
-      {
-        id: 1,
-        navitem: 'school',
-        routerLink: 'school'
-      },
+  nav: any[] = []
+constructor(private navcontent:ServiceService){}
 
-      {
-        id:2,
-        navitem:'college',
-        routerLink: 'college'
-      },
-
-      {
-        id:3,
-        navitem:'enterprise',
-        routerLink: 'enterprise'
-      },
-
-      {
-        id:4,
-        navitem:'notes',
-        routerLink: 'notes'
-      },
-      {
-        id:5,
-        navitem:'airen mask',
-        routerLink: 'airen'
-      },
-      {
-        id:6,
-        navitem:'',
-        icon:'pi pi-cog',
-        routerLink: 'settings'
-      }
-    ]
-
+ngOnInit(): void {
+  this.navcontent.getNavitems().subscribe((res)=>this.nav=res)
+}
     sidebarVisible: boolean = false;
 }
 

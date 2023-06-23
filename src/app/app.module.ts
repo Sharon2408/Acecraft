@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MegaMenuModule } from 'primeng/megamenu';
@@ -27,7 +28,6 @@ import { SliderModule } from 'primeng/slider';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { AnimateModule } from 'primeng/animate';
-
 
 
 
@@ -66,7 +66,8 @@ import { AnimateModule } from 'primeng/animate';
     SidebarModule,
     ButtonModule,
    AnimateModule,
-   BrowserAnimationsModule
+   BrowserAnimationsModule,
+   HttpClientModule
 
     
   ],
