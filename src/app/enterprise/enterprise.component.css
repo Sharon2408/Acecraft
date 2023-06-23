@@ -1,8 +1,19 @@
 .bg1 {
-    background-size: cover;
-    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-1.jpg);
-    background-position: center 122px;
-    background-attachment: fixed;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-  }
+  background-size: cover;
+  background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-1.jpg);
+  background-position: center 122px;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.img1 {
+  background-image: url("/assets/images/Enterprises-2.png");
+  background-size: 180%;
+  background-position: center;
+  height: 500px;
+  width: 300px;
+  background-repeat: no-repeat;
+
+}
+

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-enterprise',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class EnterpriseComponent {
 
+  @Input()
+  ngStyle!: { [klass: string]: any; };
+  ngDoCheck(){}
+
+ 
 }
