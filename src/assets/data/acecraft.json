@@ -124,5 +124,35 @@
       "icon": "assets/images/icons8-linkedin-48.png",
       "link": "https://in.linkedin.com/"
     }
+  ],
+  "enterpriseimages":[
+    {
+      "classname":"col-lg-4 col-sm-12 col-md-12 card img1 ",
+      "text1":"F(IT) MATTERS",
+      "text2":"A size for every one.",
+      "text1class":"card-text text-center text-secondary fs-5 mt-5",
+      "text2class":"card-text text-secondary fs-2 fw-lighter mt-4 "
+    },
+    {
+      "classname":"col-lg-4 col-sm-12 col-md-12 card img2",
+      "text1":"PERSONALISED BRANDING",
+      "text2":"Your design.",
+      "text3":"Our customization.",
+      "text1class":"card-text text-center text-secondary fs-5 mt-5",
+      "text2class":"card-text text-center text-secondary fs-2 fw-lighter mt-4 ",
+      "text3class":"card-text text-center text-secondary fs-2 fw-lighter"
+    },
+    {
+      "classname":"col-lg-4 col-sm-12 card col-md-12 img3",
+      "text1":"TEAM UP FOR TEAM WEAR",
+      "text2":"Bulk orders delivered.",
+      "text3":"seamlessly",
+      "text1class":"card-text text-center text-secondary fs-5 mt-5",
+      "text2class":"card-text text-center text-secondary fs-2 fw-lighter ",
+      "text3class":"card-text text-center text-secondary fs-2 fw-lighter "
+     
+      
+      
+    }
   ]
 }

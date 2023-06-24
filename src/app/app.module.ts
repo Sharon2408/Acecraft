@@ -28,8 +28,8 @@ import { SliderModule } from 'primeng/slider';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { AnimateModule } from 'primeng/animate';
-
-
+import { TimelineModule } from 'primeng/timeline';
+import { StepsModule } from 'primeng/steps';
 
 
 
@@ -67,7 +67,9 @@ import { AnimateModule } from 'primeng/animate';
     ButtonModule,
    AnimateModule,
    BrowserAnimationsModule,
-   HttpClientModule
+   HttpClientModule,
+   TimelineModule,
+   StepsModule
 
     
   ],

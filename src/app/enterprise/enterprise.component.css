@@ -11,9 +11,63 @@
   background-image: url("/assets/images/Enterprises-2.png");
   background-size: 180%;
   background-position: center;
-  height: 500px;
-  width: 300px;
   background-repeat: no-repeat;
-
 }
 
+.img2 {
+  background-image: url("/assets/images/Enterprises-3.png");
+  background-size: 180%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img3 {
+  background-image: url("/assets/images/Enterprises-4.png");
+  background-size: 180%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  height: 335px;
+  max-width: 335px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(0.9);
+}
+
+.img4 {
+  margin-left: 4.2em;
+}
+
+.img5 {
+  margin-left: 7em;
+}
+
+.img6 {
+  margin-left: 7em;
+}
+
+.img7 {
+  margin-left: 7em;
+}
+
+.img8 {
+  margin-left: 7em;
+}
+
+.img9 {
+  margin-left: 7em;
+}
+
+#row {
+  width: 90%;
+  margin-left: 4em;
+}
+
+
+@media (min-width=500px) {
+    
+    
+}
