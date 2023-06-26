@@ -1,38 +1,104 @@
-<nav class="navbar navbar-expand-lg sticky-top  bg-black">
-    <div class="flex justify-content-center">
-    
-        <span (click)="sidebarVisible = true" class="d-lg-none " id="toggle"
-            style="font-size: 2rem; color: rgb(255, 255, 255);"> &#9776;</span>
+<nav class="navbar navbar-expand-lg sticky-top bg-black">
+  <div class="flex justify-content-center">
+    <span
+      (click)="sidebarVisible = true"
+      class="d-lg-none"
+      id="toggle"
+      style="font-size: 2rem; color: rgb(255, 255, 255)"
+    >
+      &#9776;</span
+    >
+  </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" id="ace" routerLink="">a c e c r a f t</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <ul class="navbar-nav">
+          <ng-container *ngFor="let nav of nav">
+            <li class="nav-item" *ngIf="nav.navitem">
+              <a
+                id="navitem"
+                class="nav-link text-decoration"
+                aria-current="page"
+                [routerLink]="nav.routerLink"
+                >{{ nav.navitem | uppercase }}</a
+              >
+            </li>
+          </ng-container>
+        </ul>
+      </div>
     </div>
-    <div class="container-fluid">
-        <a class="navbar-brand" id="ace" routerLink="">a c e c r a f t</a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <ul class="navbar-nav">
-                    <ng-container *ngFor="let nav of nav">
-                        <li class="nav-item" *ngIf="nav.navitem">
-                            <a id="navitem" class="nav-link text-decoration" aria-current="page"
-                                [routerLink]="nav.routerLink">{{nav.navitem | uppercase}}</a>
-                        </li>
-                    </ng-container>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="d-flex d-xs-none" style=" margin-top: 4%;">
-        <li class="nav-item ">
-            <a class="nav-link " routerLink="" aria-disabled="true"><i class="pi pi-cog"
-                    style="font-size: 1.5rem"></i></a>
-        </li>
-        <li class="nav-item  ">
-            <a class="nav-link " routerLink="cart" tabindex="-1" aria-disabled="true"><i
-                    class="pi pi-shopping-cart p-overlay-badge" pBadge style="font-size: 1.5rem"></i>
-            </a>
-        </li>
-    </div>
-    <p-sidebar [(visible)]="sidebarVisible">
-        <ng-template pTemplate="header">SHOP FOR</ng-template>
-        <ng-template pTemplate="content">Body Content</ng-template>
-        <ng-template pTemplate="footer">Footer Content</ng-template>
-    </p-sidebar>
+  </div>
+  <div class="d-flex" style="margin-top: 4%">
+    <li class="nav-item d-md-none d-lg-block d-sm-none d-none">
+      <a class="nav-link" routerLink="" aria-disabled="true"
+        ><i class="pi pi-cog" style="font-size: 1.5rem"></i
+      ></a>
+    </li>
+    <li class="nav-item d-md-none d-lg-block d-sm-none d-none">
+      <a class="nav-link" routerLink="cart" tabindex="-1" aria-disabled="true"
+        ><i
+          class="pi pi-shopping-cart p-overlay-badge"
+          pBadge
+          style="font-size: 1.5rem"
+        ></i>
+      </a>
+    </li>
+  </div>
+  <div class="d-flex">
+    <li
+      class="nav-item d-block d-md-block d-lg-none d-xl-none d-xxl-none d-sm-block"
+    >
+      <a class="nav-link" routerLink="" aria-disabled="true"
+        ><i
+          class="pi pi-cog"
+          style="font-size: 1.5rem"
+          (click)="sidebarVisible2 = true"
+        ></i
+      ></a>
+    </li>
+    <li
+      class="nav-item d-block d-md-block d-lg-none d-xl-none d-xxl-none d-sm-block"
+    >
+      <a class="nav-link" routerLink="cart" tabindex="-1" aria-disabled="true"
+        ><i
+          class="pi pi-shopping-cart p-overlay-badge"
+          pBadge
+          style="font-size: 1.5rem"
+        ></i>
+      </a>
+    </li>
+  </div>
+  <div></div>
 </nav>
+<!-- Side NavBar -->
+<p-sidebar [(visible)]="sidebarVisible">
+  <ng-template
+    pTemplate="header"
+    [ngStyle]="{ backgroundColor: 'var(--primary-color)' }"
+    >SHOP FOR</ng-template
+  >
+  <ng-container *ngFor="let x of nav">
+    <p class="" [routerLink]="x.routerLink">{{ x.navitem | uppercase }}</p>
+    <hr />
+  </ng-container>
+  <ng-container *ngFor="let x of foot">
+    <p>{{ x.name | uppercase }}</p>
+    <hr />
+  </ng-container>
+  <a *ngFor="let x of footicon" [href]="x.link">
+    <img class="" [src]="x.icon"
+  /></a>
+</p-sidebar>
+
+<!-- Right side bar -->
+<p-sidebar [(visible)]="sidebarVisible2" position="right">
+  <h6>Login</h6>
+  <hr>
+  <h6>Register</h6>
+  <hr>
+  <h6>Order Status</h6>
+  <hr>
+  <h6>Contact</h6>
+  <hr>
+</p-sidebar>

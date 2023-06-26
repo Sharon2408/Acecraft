@@ -10,12 +10,17 @@ import { ServiceService } from 'src/Services/service.service';
 export class NavbarComponent implements OnInit {
 
   nav: any[] = []
-constructor(private navcontent:ServiceService){}
+  foot:any[] = []
+  footicon:any[] = []
+constructor(private navcontent:ServiceService,private footcontent:ServiceService,private footicon1:ServiceService){}
 
 ngOnInit(): void {
   this.navcontent.getNavitems().subscribe((res)=>this.nav=res)
+  this.footcontent.getFooter().subscribe((res)=>this.foot=res)
+  this.footicon1.getIcons().subscribe((res)=>this.footicon=res)
 }
     sidebarVisible: boolean = false;
+    sidebarVisible2: boolean = false;
 }
 
 

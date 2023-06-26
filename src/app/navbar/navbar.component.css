@@ -38,5 +38,13 @@ ul li {
     padding: 10px;
   }
 
- 
+ hr{
+    opacity: .1;
+   
+ }
+
+ p{
+    font-family: 'Times New Roman', Times, serif;
+ }
+
 

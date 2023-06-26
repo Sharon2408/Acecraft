@@ -81,12 +81,6 @@
       "id": 5,
       "navitem": "airen mask",
       "routerLink": "airen"
-    },
-    {
-      "id": 6,
-      "navitem": "",
-      "icon": "pi pi-cog",
-      "routerLink": "settings"
     }
   ],
   "footer": [
