@@ -38,4 +38,11 @@ school=[
     text1:'nhis'
   }
 ]
+visible: boolean = false;
+position: string = 'top';
+
+showDialog(position: string) {
+    this.position = position;
+    this.visible = true;
+}
 }

@@ -1,59 +1,80 @@
-<div class="bg1 ">
+<div class="bg1">
     <div class="col text-center bg-white">
         <img src="https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/honda.png" class="pt-3" alt=""
-            height="45px">
+            height="45px" />
         <h6 class="pb-2 pt-2">HONDA CAR'S DEALER MAN POWER UNIFORM</h6>
     </div>
     <div>
-        <h3 class="text-center text-secondary" style="margin-top: 25%;">Workwear that works <br> <i
-                class="fa-solid fa-angle-down fa-beat fa-md text-secondary "></i></h3>
+        <h3 class="text-center text-secondary" style="margin-top: 25%">
+            Workwear that works <br />
+            <i class="fa-solid fa-angle-down fa-beat fa-md text-secondary"></i>
+        </h3>
     </div>
 </div>
 <div class="container-fluid">
     <div class="text-center pt-5">
-        <h1 class=" fw-bolder">Work Relaxed.</h1>
-        <p class="fw-bold">When we designed our uniforms, we wore them to work every day.</p>
-        <p class="fw-bold">We still do. They’re comfy, relaxed and designed to suit your workplace.</p>
+        <h1 class="fw-bolder">Work Relaxed.</h1>
+        <p class="fw-bold">
+            When we designed our uniforms, we wore them to work every day.
+        </p>
+        <p class="fw-bold">
+            We still do. They’re comfy, relaxed and designed to suit your workplace.
+        </p>
     </div>
 </div>
 
-<div class="container pt-5">
+<div class="container pt-5 justify-content-md-center">
     <div class="row justify-content-between">
-        <div *ngFor="let enterprise of enterpriseimages" [class]="enterprise.classname" style="border: none;">
-            <div class="card-body mt-5 ">
-                <h6 [class]="enterprise.text1class">{{enterprise.text1}}</h6>
-                <h2 [class]="enterprise.text2class">{{enterprise.text2}}</h2>
-                <h2 [class]="enterprise.text3class">{{enterprise.text3}}</h2>
+        <div *ngFor="let enterprise of enterpriseimages" [class]="enterprise.classname" style="border: none">
+            <div class="card-body mt-5">
+                <h6 [class]="enterprise.text1class">{{ enterprise.text1 }}</h6>
+                <h2 [class]="enterprise.text2class">{{ enterprise.text2 }}</h2>
+                <h2 [class]="enterprise.text3class">{{ enterprise.text3 }}</h2>
             </div>
         </div>
     </div>
 </div>
-<br><br><br><br><br>
+<br /><br /><br /><br /><br />
 <div class="container-fluid bg-black">
     <span class="container-fluid mt-5">
-        <div class="row" >
-            <h1 class="text-center text-secondary fw-bold p-5">This is how we do it</h1>
-            <div style="padding-left: 150px; padding-right: 150px;">
-            <p-timeline [value]="timeline" styleClass="customized-timeline" layout="horizontal" align="top" >
-                <ng-template pTemplate="marker" let-timeline>
-                    <span class="custom-marker p-shadow-2" >
-                        <i [ngClass]="timeline.icon" style="color: #9a9a9c;"></i>
-                    </span>
-                </ng-template>
-            </p-timeline>
-        </div>
-            <div id="sp-space" >
-                <img src="/assets/images/icon-1.png" class="img4" alt="" height="100px" width="100px">
-                <img src="/assets/images/icon-2.png" class="img5" alt="" height="100px" width="100px">
-                <img src="/assets/images/icon-3.png" class="img6" alt="" height="100px" width="100px">
-                <img src="/assets/images/icon-4.png" class="img7" alt="" height="100px" width="100px">
-                <img src="/assets/images/icon-5.png" class="img8" alt="" height="100px" width="100px">
-                <img src="/assets/images/icon-6.png" class="img9" alt="" height="100px" width="100px">
+        <div class="row">
+            <h1 class="text-center fw-bold pt-5 mt-5 p-3" style="color: #978f8f">
+                This is how we do it
+            </h1>
+            <div style="padding-left: 150px; padding-right: 150px">
+                <p-timeline [value]="timeline" styleClass="customized-timeline" layout="horizontal" align="top">
+                    <ng-template pTemplate="marker" let-timeline>
+                        <span class="custom-marker p-shadow-2">
+                            <i [ngClass]="timeline.icon" style="color: #978f8f"></i>
+                        </span>
+                    </ng-template>
+                </p-timeline>
+            </div>
+            <div id="sp-space">
+                <img *ngFor="let x of timeline" [src]="x.image" [class]="x.className" alt="" height="100px"
+                    width="100px" />
+                <div class="d-flex justify-content-around text-center p-5" style="color: #978f8f">
+                    <h2 *ngFor="let x of timeline" class="fw-light fs-3">
+                        {{ x.title1 }} <br />
+                        {{ x.title2 }}
+                    </h2>
+                </div>
             </div>
         </div>
     </span>
 </div>
 
+<div class="bg-black container-fluid position-relative">
+    <div class="row text-center">
+        <img id="btmimg" [src]="bottomimage1" alt="">
+        <img id="btmimg" [src]="bottomimage2" alt="">
+        <div id="btmtext">
+        <p>Designer Uniforms <br> by </p>
+        <h6 class="fw-lighter">a c e c r a f t</h6>
+       <a routerLink=" " class="text-decoration-none"><p id="bottombtn" class="" >Get In Touch</p></a> 
+       
+    </div>
+        
+    </div>
+</div>
 
-
-<br><br>

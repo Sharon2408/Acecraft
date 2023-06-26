@@ -127,7 +127,7 @@
   ],
   "enterpriseimages":[
     {
-      "classname":"col-lg-4 col-sm-12 col-md-12 card img1 ",
+      "classname":"col-lg-4 col-sm-12 col-md-12  card img1 ",
       "text1":"F(IT) MATTERS",
       "text2":"A size for every one.",
       "text1class":"card-text text-center text-secondary fs-5 mt-5",

@@ -30,8 +30,8 @@ import { ButtonModule } from 'primeng/button';
 import { AnimateModule } from 'primeng/animate';
 import { TimelineModule } from 'primeng/timeline';
 import { StepsModule } from 'primeng/steps';
-
-
+import { ModalComponent } from './modal/modal.component';
+import { DialogModule } from 'primeng/dialog';
 
 
 @NgModule({
@@ -50,7 +50,7 @@ import { StepsModule } from 'primeng/steps';
     NoteCard1Component,
     StylingAccessoriesThatComplementYourFormalWearComponent,
     FeedbackFormComponent,
-  
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,15 +65,15 @@ import { StepsModule } from 'primeng/steps';
     SliderModule,
     SidebarModule,
     ButtonModule,
-   AnimateModule,
-   BrowserAnimationsModule,
-   HttpClientModule,
-   TimelineModule,
-   StepsModule
-
-    
+    AnimateModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    TimelineModule,
+    StepsModule,
+    DialogModule,
+  
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
