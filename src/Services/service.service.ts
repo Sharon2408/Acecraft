@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Models, Navitems, icons, enterpriseimages } from 'src/Models/models';
+import { Models, Navitems, icons, enterpriseimages,Products } from 'src/Models/models';
 import { Footer } from 'primeng/api';
 
 @Injectable({
@@ -14,6 +14,7 @@ export class ServiceService {
   footer: string = ' http://localhost:3000/footer';
   icon: string = 'http://localhost:3000/footericons';
   enterprise: string = 'http://localhost:3000/enterpriseimages';
+  products: string = 'http://localhost:3000/Products';
 
   getCards() {
     return this.http.get<Models[]>(this.cardurl);
@@ -33,5 +34,13 @@ export class ServiceService {
 
   getEnterpriseimages(){
     return this.http.get<enterpriseimages[]>(this.enterprise)
+  }
+
+  getProducts(){
+    return this.http.get<Products[]>(this.products)
+  }
+
+  getProductsById(id: number) {
+    return this.http.get<Products[]>(this.products + '?id=' + id);
   }
 }

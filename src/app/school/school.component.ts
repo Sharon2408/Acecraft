@@ -11,7 +11,8 @@ export class SchoolComponent {
 school=[ 
   {
     img:'http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/jain.jpeg',
-    text1:'jgi'
+    text1:'jgi',
+    routerLink:'/products'
   },
   {
     img:'http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/rvschool.png',

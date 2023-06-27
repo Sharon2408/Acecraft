@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { SchoolComponent } from './school/school.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BadgeModule } from 'primeng/badge';
-import { CustompipePipe } from './custompipe.pipe';
 import { AcecraftComponent } from './acecraft/acecraft.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
@@ -32,6 +31,15 @@ import { TimelineModule } from 'primeng/timeline';
 import { StepsModule } from 'primeng/steps';
 import { ModalComponent } from './modal/modal.component';
 import { DialogModule } from 'primeng/dialog';
+import { HondaComponent } from './honda/honda.component';
+import { ViewSchoolProductsComponent } from './school/view-school-products/view-school-products.component';
+import { ProductsComponent } from './products/products.component';
+import { SchoolProdsComponent } from './products/school-prods/school-prods.component';
+import { SchoolViewProductsComponent } from './products/school-view-products/school-view-products.component';
+import { SortprodPipe } from '../shared/sortprod.pipe';
+
+
+
 
 
 @NgModule({
@@ -39,7 +47,6 @@ import { DialogModule } from 'primeng/dialog';
     AppComponent,
     SchoolComponent,
     NavbarComponent,
-    CustompipePipe,
     AcecraftComponent,
     FooterComponent,
     CollegeComponent,
@@ -51,6 +58,15 @@ import { DialogModule } from 'primeng/dialog';
     StylingAccessoriesThatComplementYourFormalWearComponent,
     FeedbackFormComponent,
     ModalComponent,
+    HondaComponent,
+    ViewSchoolProductsComponent,
+    ProductsComponent,
+    SchoolProdsComponent,
+    SchoolViewProductsComponent,
+    SortprodPipe,
+
+    
+
   ],
   imports: [
     BrowserModule,

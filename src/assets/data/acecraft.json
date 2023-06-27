@@ -148,5 +148,311 @@
       
       
     }
+  ],
+  "Products": [
+    {
+      "id": 1,
+      "title": "CIS Royal Day Wear (Grade 1-5)",
+      "productCode": "CIEDPT20",
+      "brand": "ACECRAFT",
+      "soldBy": "Alchemy",
+      "price": 450,
+      "originalPrice": 750,
+      "offerPercent": 40,
+      "gender": "all",
+      "size": [
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40
+      ],
+      "lengthFlag": false,
+      "length": [
+        0
+      ],
+      "description": [
+        "Made from Poly-cotton. Henley neckline. Short sleeves."
+      ],
+      "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
+    },
+    {
+      "id": 2,
+      "title": "NHG Shirt (Boys)",
+      "productCode": "NHBSHRT20",
+      "brand": "ACECRAFT",
+      "soldBy": "Alchemy",
+      "price": 355,
+      "originalPrice": 535,
+      "offerPercent": 34,
+      "gender": "",
+      "size": [
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
+      "lengthFlag": false,
+      "length": [
+        0
+      ],
+      "description": [
+        "Made from a fine blend of Cotton and Polyester yarn.",
+        "Spread collar.",
+        "Button fastening.",
+        "Short sleeves.",
+        "Straight hem."
+      ],
+      "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345c6/images/5aa0f5c6f04705ab2ca345c7/5aa0f5d0f04705ab2ca345f9/webp/5aa0f5d0f04705ab2ca345f9-480x480.jpg"
+    },
+    {
+      "id": 3,
+      "title": "CIS Sky Day Wear (Grade 6-8)",
+      "productCode": "CIMDPT26",
+      "brand": "ACECRAFT",
+      "soldBy": "Alchemy",
+      "price": 500,
+      "originalPrice": 825,
+      "offerPercent": 39,
+      "gender": "all",
+      "size": [
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42
+      ],
+      "lengthFlag": false,
+      "length": [
+        0
+      ],
+      "description": [
+        "Made from Poly-cotton. Henley neckline. Short sleeves."
+      ],
+      "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg"
+    },
+    {
+      "id": 4,
+      "title": "NHG Shirt (Girls)",
+      "productCode": "NHGSHRT18",
+      "brand": "ACECRAFT",
+      "soldBy": "Alchemy",
+      "price": 355,
+      "originalPrice": 535,
+      "offerPercent": 34,
+      "gender": "all",
+      "size": [
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46
+      ],
+      "lengthFlag": false,
+      "length": [
+        0
+      ],
+      "description": [
+        ""
+      ],
+      "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
+    },
+    {
+      "id": 5,
+      "title": "CIS White Day Wear (Grade 9 & 10)",
+      "productCode": "CIHDPT28",
+      "brand": "ACECRAFT",
+      "soldBy": "Alchemy",
+      "price": 500,
+      "originalPrice": 825,
+      "offerPercent": 39,
+      "gender": "all",
+      "size": [
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
+      "lengthFlag": false,
+      "length": [
+        0
+      ],
+      "description": [
+        "Made from Poly-cotton.Henley neckline.Short sleeves."
+      ],
+      "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg"
+    },
+    {
+      "id": 6,
+      "title": "NHG Shorts",
+      "productCode": "NHBSH1220",
+      "brand": "ACECRAFT",
+      "soldBy": "Alchemy",
+      "price": 385,
+      "originalPrice": 580,
+      "offerPercent": 34,
+      "gender": "",
+      "size": [
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40
+      ],
+      "lengthFlag": true,
+      "length": [
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "description": [
+        "Twill Texture Formal Shorts.Poly-Viscose Fabric."
+      ],
+      "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f3385f/images/5aa0f01491c2e5ab32f33860/5aa0f01d91c2e5ab32f33897/webp/5aa0f01d91c2e5ab32f33897-640x640.jpg"
+    },
+    {
+      "id": 7,
+      "title": "CIS White Day Wear (Grade 11 & 12)",
+      "productCode": "CIBDPT30",
+      "brand": "ACECRAFT",
+      "soldBy": "Alchemy",
+      "price": 500,
+      "originalPrice": 825,
+      "offerPercent": 39,
+      "gender": "all ",
+      "size": [
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
+      "description": [
+        "Made from Poly-cotton. Henley neckline. Short sleeves."
+      ],
+      "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d706374c88c6b06d39dc1/webp/h-school-640x640.jpg"
+    },
+    {
+      "id": 8,
+      "title": "NHG Trousers [Boys, Grade 5-10]",
+      "productCode": "NHBTRS3224",
+      "brand": "ACECRAFT",
+      "soldBy": "Alchemy",
+      "price": 605,
+      "originalPrice": 910,
+      "offerPercent": 34,
+      "gender": "all",
+      "size": [
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40
+      ],
+      "lengthFlag": true,
+      "length": [
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
+      "description": [
+        "Twill Texture Formal trouser.Poly-Viscose Fabric."
+      ],
+      "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33832/images/5aa0f01491c2e5ab32f33833/5aa0f01e91c2e5ab32f338a1/webp/5aa0f01e91c2e5ab32f338a1-640x640.jpg"
+    },
+    {
+      "id": 9,
+      "title": "CIS Day Wear Shorts",
+      "productCode": "CIDCSH1220",
+      "brand": "ACECRAFT",
+      "soldBy": "Alchemy",
+      "price": 475,
+      "originalPrice": 793,
+      "offerPercent": 40,
+      "gender": "all",
+      "size": [
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38
+      ],
+      "lengthFlag": true,
+      "length": [
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24
+      ],
+      "description": [
+        "Made from cotton-Lycra.",
+        "Elasticated waist .",
+        "Cargo pocket detail.",
+        "Side pockets"
+      ],
+      "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d708bcbfb666ae1149973/webp/cisb-shorts-640x640.jpg"
+    }
   ]
 }

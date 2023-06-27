@@ -1,0 +1,14 @@
+.bg {
+  background-image: url("/assets/images/productsbg.jpg");
+  background-position: cover;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  padding-top: 250px;
+  padding-bottom: 300px;
+  background-repeat: no-repeat;
+}
+
+.text{
+    margin-top: 12%;
+}

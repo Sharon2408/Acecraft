@@ -25,3 +25,17 @@ export interface enterpriseimages {
     text1class:string;
     text2class:string
 }
+export interface Products {
+    title: string;
+    productCode: string;
+    brand: string;
+    soldBy: string;
+    price: number;
+    originalPrice: number;
+    offerPercent: number;
+    gender: string;
+    size: number[];
+    description: string[];
+    imgSrc: string;
+  }
+  

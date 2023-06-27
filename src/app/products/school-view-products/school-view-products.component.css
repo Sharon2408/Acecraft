@@ -1,0 +1,55 @@
+.container-fluid {
+    background-color: white;
+    padding: 0%;
+    margin: 0%;
+  }
+  .imgView {
+    height: 544px;
+    width: 481px;
+  }
+  .container1 {
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 150px;
+  }
+  .price {
+    font-size: 35px;
+  }
+  .originalPrice {
+    font-size: 20px;
+  }
+  
+  .offer {
+    background-color: black;
+    color: white;
+    padding: 4px;
+  
+    margin-left: 20px;
+  }
+  
+  .size {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    margin-left: 20px;
+  }
+  
+  .dropdown {
+    padding: 4px;
+  }
+  
+  .quantity {
+    padding: 3px;
+    width: 128px;
+  }
+  
+  .desc {
+    background-color: whitesmoke;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .descUl {
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+  
