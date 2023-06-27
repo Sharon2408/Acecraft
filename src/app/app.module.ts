@@ -37,6 +37,7 @@ import { ProductsComponent } from './products/products.component';
 import { SchoolProdsComponent } from './products/school-prods/school-prods.component';
 import { SchoolViewProductsComponent } from './products/school-view-products/school-view-products.component';
 import { SortprodPipe } from '../shared/sortprod.pipe';
+import { ProductsortPipe } from 'src/shared/productsort.pipe';
 
 
 
@@ -64,6 +65,7 @@ import { SortprodPipe } from '../shared/sortprod.pipe';
     SchoolProdsComponent,
     SchoolViewProductsComponent,
     SortprodPipe,
+    ProductsortPipe
 
     
 
@@ -87,6 +89,7 @@ import { SortprodPipe } from '../shared/sortprod.pipe';
     TimelineModule,
     StepsModule,
     DialogModule,
+    
   
   ],
   providers: [],

@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ProductsortPipe } from 'src/shared/productsort.pipe';
 import { ProductsComponent } from './products.component';
 
 describe('ProductsComponent', () => {

@@ -27,7 +27,7 @@
 <!-- Products Display from Child -->
 <div class="container">
     <div class="row">
-        <div class="col-4" *ngFor="let x of products">
+        <div class="col-4" *ngFor="let x of products | productsort : [sortParam, sortDirection]">
             <app-school-prods [products]="x"></app-school-prods>
         </div>
     </div>
