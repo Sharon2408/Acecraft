@@ -7,11 +7,10 @@ import { Component,EventEmitter,Input,Output } from '@angular/core';
 })
 export class CartComponent {
 total=340;
-@Input()
-parentProductList: Array<string> = [];
+
 
 @Input()
-value: number | any;
+value: number | any =1;
 
 @Output()
 productEventEmitter = new EventEmitter();
