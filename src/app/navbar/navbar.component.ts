@@ -8,7 +8,7 @@ import { ServiceService } from 'src/Services/service.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  val:string='9';
   nav: any[] = []
   foot:any[] = []
   footicon:any[] = []

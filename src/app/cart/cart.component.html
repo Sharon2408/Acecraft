@@ -1,1 +1,24 @@
-<p>cart works!</p>
+<div class="container">
+  <div class="row">
+    <h1 class="text-center">
+      Your bag total is {{ total | currency : "INR" : "symbol" }}
+    </h1>
+    <hr />
+    <div class="col d-flex">
+      <img
+        src="/assets/images/day-wear-polos-1024x1024.webp"
+        alt=""
+        height="300px"
+        width="200px"
+      />
+      <h3 class="ms-5">HOIIIIIIIIIIIIIIII</h3>
+      <span>
+        <button (click)="getquantity(value)" >+</button>
+   
+    <input type="text" [value]="value">
+    <button (click)="decquantity(value)" >-</button>
+</span>
+    </div>
+  </div>
+  <hr />
+</div>

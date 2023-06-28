@@ -39,7 +39,7 @@
       <a class="nav-link" routerLink="cart" tabindex="-1" aria-disabled="true"
         ><i
           class="pi pi-shopping-cart p-overlay-badge"
-          pBadge
+          pBadge [value]="val" severity="danger"
           style="font-size: 1.5rem"
         ></i>
       </a>
@@ -63,8 +63,8 @@
       <a class="nav-link" routerLink="cart" tabindex="-1" aria-disabled="true"
         ><i
           class="pi pi-shopping-cart p-overlay-badge"
-          pBadge
-          style="font-size: 1.5rem"
+          pBadge 
+          style="font-size: 1.5rem"  
         ></i>
       </a>
     </li>
