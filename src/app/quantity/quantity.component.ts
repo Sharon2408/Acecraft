@@ -7,11 +7,11 @@ import Swal from 'sweetalert2';
 })
 export class QuantityComponent {
 
-  quantity = 1
+  value = 1
 
   showMyProduct(productName: number) {
     if (productName == 1 || productName < 10){
-      this.quantity++
+      this.value++
         
       }
       else if(productName==10){
@@ -22,7 +22,7 @@ Swal.fire("You can Order only 10 products")
 
 decproduct(product: number){
   if(product < 100 && product > 1){
-  this.quantity--
+  this.value--
   }
  
 }

@@ -85,10 +85,10 @@
   ],
   "footer": [
     {
-      "name":"about"
+      "name": "about"
     },
     {
-      "name":"care"
+      "name": "care"
     },
     {
       "name": "returns"
@@ -103,9 +103,7 @@
       "name": "get help"
     }
   ],
-
-  "footericons": 
-  [
+  "footericons": [
     {
       "icon": "assets/images/icons8-facebook-48.png",
       "link": "https://www.facebook.com/"
@@ -119,34 +117,31 @@
       "link": "https://in.linkedin.com/"
     }
   ],
-  "enterpriseimages":[
+  "enterpriseimages": [
     {
-      "classname":"col-lg-4 col-sm-12 col-md-12  card img1 ",
-      "text1":"F(IT) MATTERS",
-      "text2":"A size for every one.",
-      "text1class":"card-text text-center text-secondary fs-5 mt-5",
-      "text2class":"card-text text-secondary fs-2 fw-lighter mt-4 "
+      "classname": "col-lg-4 col-sm-12 col-md-12  card img1 ",
+      "text1": "F(IT) MATTERS",
+      "text2": "A size for every one.",
+      "text1class": "card-text text-center text-secondary fs-5 mt-5",
+      "text2class": "card-text text-secondary fs-2 fw-lighter mt-4 "
     },
     {
-      "classname":"col-lg-4 col-sm-12 col-md-12 card img2",
-      "text1":"PERSONALISED BRANDING",
-      "text2":"Your design.",
-      "text3":"Our customization.",
-      "text1class":"card-text text-center text-secondary fs-5 mt-5",
-      "text2class":"card-text text-center text-secondary fs-2 fw-lighter mt-4 ",
-      "text3class":"card-text text-center text-secondary fs-2 fw-lighter"
+      "classname": "col-lg-4 col-sm-12 col-md-12 card img2",
+      "text1": "PERSONALISED BRANDING",
+      "text2": "Your design.",
+      "text3": "Our customization.",
+      "text1class": "card-text text-center text-secondary fs-5 mt-5",
+      "text2class": "card-text text-center text-secondary fs-2 fw-lighter mt-4 ",
+      "text3class": "card-text text-center text-secondary fs-2 fw-lighter"
     },
     {
-      "classname":"col-lg-4 col-sm-12 card col-md-12 img3",
-      "text1":"TEAM UP FOR TEAM WEAR",
-      "text2":"Bulk orders delivered.",
-      "text3":"seamlessly",
-      "text1class":"card-text text-center text-secondary fs-5 mt-5",
-      "text2class":"card-text text-center text-secondary fs-2 fw-lighter ",
-      "text3class":"card-text text-center text-secondary fs-2 fw-lighter "
-     
-      
-      
+      "classname": "col-lg-4 col-sm-12 card col-md-12 img3",
+      "text1": "TEAM UP FOR TEAM WEAR",
+      "text2": "Bulk orders delivered.",
+      "text3": "seamlessly",
+      "text1class": "card-text text-center text-secondary fs-5 mt-5",
+      "text2class": "card-text text-center text-secondary fs-2 fw-lighter ",
+      "text3class": "card-text text-center text-secondary fs-2 fw-lighter "
     }
   ],
   "Products": [
@@ -453,6 +448,17 @@
         "Side pockets"
       ],
       "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d708bcbfb666ae1149973/webp/cisb-shorts-640x640.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "id": 3,
+      "title": "CIS Sky Day Wear (Grade 6-8)",
+      "img": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg",
+      "size": 28,
+      "price": 500,
+      "totalPrice": 0,
+      "quantity": 1
     }
   ]
 }

@@ -39,6 +39,8 @@ import { SchoolViewProductsComponent } from './products/school-view-products/sch
 import { SortprodPipe } from '../shared/sortprod.pipe';
 import { ProductsortPipe } from 'src/shared/productsort.pipe';
 import { QuantityComponent } from './quantity/quantity.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -68,7 +70,9 @@ import { QuantityComponent } from './quantity/quantity.component';
     SchoolViewProductsComponent,
     SortprodPipe,
     ProductsortPipe,
-    QuantityComponent
+    QuantityComponent,
+    RegisterComponent,
+    LoginComponent
 
     
 

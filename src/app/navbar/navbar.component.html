@@ -1,13 +1,8 @@
 <nav class="navbar navbar-expand-lg sticky-top bg-black">
   <div class="flex justify-content-center">
-    <span
-      (click)="sidebarVisible = true"
-      class="d-lg-none"
-      id="toggle"
-      style="font-size: 2rem; color: rgb(255, 255, 255)"
-    >
-      &#9776;</span
-    >
+    <span (click)="sidebarVisible = true" class="d-lg-none" id="toggle"
+      style="font-size: 2rem; color: rgb(255, 255, 255)">
+      &#9776;</span>
   </div>
   <div class="container-fluid">
     <a class="navbar-brand" id="ace" routerLink="">a c e c r a f t</a>
@@ -16,13 +11,8 @@
         <ul class="navbar-nav">
           <ng-container *ngFor="let nav of nav">
             <li class="nav-item" *ngIf="nav.navitem">
-              <a
-                id="navitem"
-                class="nav-link text-decoration"
-                aria-current="page"
-                [routerLink]="nav.routerLink"
-                >{{ nav.navitem | uppercase }}</a
-              >
+              <a id="navitem" class="nav-link text-decoration" aria-current="page" [routerLink]="nav.routerLink">{{
+                nav.navitem | uppercase }}</a>
             </li>
           </ng-container>
         </ul>
@@ -31,41 +21,43 @@
   </div>
   <div class="d-flex" style="margin-top: 4%">
     <li class="nav-item d-md-none d-lg-block d-sm-none d-none">
-      <a class="nav-link" routerLink="" aria-disabled="true"
-        ><i class="pi pi-cog" style="font-size: 1.5rem"></i
-      ></a>
+      <div id="setting">
+        <a class="nav-link" routerLink="" aria-disabled="true"><i class="pi pi-cog" style="font-size: 1.5rem"></i></a>
+        <ul id="list" class="fs-4">
+          <li routerLink="login" >
+            SignIn
+          </li>
+          <br>
+          <li routerLink="register">
+            Register
+          </li>
+          <br>
+          <li>
+            Order Status
+          </li>
+          <br>
+          <li>
+            Contact
+          </li>
+        </ul>
+      </div>
+
     </li>
     <li class="nav-item d-md-none d-lg-block d-sm-none d-none">
-      <a class="nav-link" routerLink="cart" tabindex="-1" aria-disabled="true"
-        ><i
-          class="pi pi-shopping-cart p-overlay-badge"
-          pBadge [value]="val" severity="danger"
-          style="font-size: 1.5rem"
-        ></i>
+      <a class="nav-link" routerLink="cart" tabindex="-1" aria-disabled="true"><i
+          class="pi pi-shopping-cart p-overlay-badge" pBadge value="{{val}}" severity="danger"
+          style="font-size: 1.5rem"></i>
       </a>
     </li>
   </div>
   <div class="d-flex">
-    <li
-      class="nav-item d-block d-md-block d-lg-none d-xl-none d-xxl-none d-sm-block"
-    >
-      <a class="nav-link" routerLink="" aria-disabled="true"
-        ><i
-          class="pi pi-cog"
-          style="font-size: 1.5rem"
-          (click)="sidebarVisible2 = true"
-        ></i
-      ></a>
+    <li class="nav-item d-block d-md-block d-lg-none d-xl-none d-xxl-none d-sm-block">
+      <a class="nav-link" routerLink="" aria-disabled="true"><i class="pi pi-cog" style="font-size: 1.5rem"
+          (click)="sidebarVisible2 = true"></i></a>
     </li>
-    <li
-      class="nav-item d-block d-md-block d-lg-none d-xl-none d-xxl-none d-sm-block"
-    >
-      <a class="nav-link" routerLink="cart" tabindex="-1" aria-disabled="true"
-        ><i
-          class="pi pi-shopping-cart p-overlay-badge"
-          pBadge 
-          style="font-size: 1.5rem"  
-        ></i>
+    <li class="nav-item d-block d-md-block d-lg-none d-xl-none d-xxl-none d-sm-block">
+      <a class="nav-link" routerLink="cart" tabindex="-1" aria-disabled="true"><i
+          class="pi pi-shopping-cart p-overlay-badge" pBadge style="font-size: 1.5rem"></i>
       </a>
     </li>
   </div>
@@ -73,11 +65,7 @@
 </nav>
 <!-- Side NavBar -->
 <p-sidebar [(visible)]="sidebarVisible">
-  <ng-template
-    pTemplate="header"
-    [ngStyle]="{ backgroundColor: 'var(--primary-color)' }"
-    >SHOP FOR</ng-template
-  >
+  <ng-template pTemplate="header" [ngStyle]="{ backgroundColor: 'var(--primary-color)' }">SHOP FOR</ng-template>
   <ng-container *ngFor="let x of nav">
     <p class="" [routerLink]="x.routerLink">{{ x.navitem | uppercase }}</p>
     <hr />
@@ -87,8 +75,7 @@
     <hr />
   </ng-container>
   <a *ngFor="let x of footicon" [href]="x.link">
-    <img class="" [src]="x.icon"
-  /></a>
+    <img class="" [src]="x.icon" /></a>
 </p-sidebar>
 
 <!-- Right side bar -->

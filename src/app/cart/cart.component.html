@@ -1,24 +1,59 @@
 <div class="container">
   <div class="row">
-    <h1 class="text-center">
-      Your bag total is {{ total | currency : "INR" : "symbol" }}
-    </h1>
-    <hr />
-    <div class="col d-flex">
+    <!-- <div  style="height: 361px;" >
+      <ng-container>
+      <h4 class="pt-5" >Your Shopping cart is Empty!</h4>
+      <h5 class="pt-3" > <a routerLink="" class="btn btn-outline-dark">Continue shopping</a></h5>
+    </ng-container>
+    </div> -->
+    
+    <h2  class="text-center pt-5 pb-5 fw-lighter" >
+      Your bag total is {{ totalPrice(cart) | currency : "INR" : "symbol" }}
+    </h2>
+   
+    <ng-container *ngFor="let x of cart">
+      <hr />
+    <div class="col d-flex justify-content-evenly">
+     
       <img
-        src="/assets/images/day-wear-polos-1024x1024.webp"
+        src="{{x.img}}"
         alt=""
         height="300px"
         width="200px"
       />
-      <h3 class="ms-5">HOIIIIIIIIIIIIIIII</h3>
+      <h3 class="ms-5">{{x.title}} <br> size:{{x.size}}</h3>
+     
       <span>
-        <button (click)="getquantity(value)" >+</button>
-   
-    <input type="text" [value]="value">
-    <button (click)="decquantity(value)" >-</button>
-</span>
+        <i (click)="decproduct(quantity)" class="fa-solid fa-minus fa-sm"></i>
+        <input readonly type="text" class="text-center" value="{{quantity}}" style="width: 40px;">
+        <i (click)=" showMyProduct(quantity)" class="fa-solid fa-plus fa-sm"></i>
+    </span>
+     <h1  class="ms-5">{{ x.price | currency : "INR" : "symbol" }} <br> <h6><a  style="color: red;" (click)="delete(x)">Remove</a></h6></h1>
+     
+    </div>
+    <hr>
+  </ng-container>
+  </div>
+</div>
+
+
+<div class="container" style="height: 200px;">
+  <div class="row">
+    <div class="col-5">
+      <h4 class="fw-lighter">Enter Coupon code here</h4>
+      <input type="text" style="height: 39px; width: 300px;">
+      <button class=" btn-outline-dark">Apply!</button>
+    </div>
+    <div class="col-3">
+      <h5 class="text-secondary">Subtotal</h5>
+      <h2 class="pt-3">Total</h2>
+    </div>
+    <div class="col-4" >
+      <h5 class="text-end text-secondary">{{ totalPrice(cart) | currency : "INR" : "symbol" }}</h5>
+      <h2 class="text-end pt-3 ">{{ totalPrice(cart) | currency : "INR" : "symbol" }}</h2>
+      <br>
+      <span class=" " > <a routerLink="" class=" btn-outline-dark">Continue shopping</a></span>
+      <span class=" ms-3" > <a  class=" btn-outline-dark">Place Order</a></span> 
     </div>
   </div>
-  <hr />
 </div>

@@ -11,6 +11,8 @@ import { NoteCard1Component } from './note-card1/note-card1.component';
 import { StylingAccessoriesThatComplementYourFormalWearComponent } from './notes/styling-accessories-that-complement-your-formal-wear/styling-accessories-that-complement-your-formal-wear.component';
 import { ProductsComponent } from './products/products.component';
 import { SchoolViewProductsComponent } from './products/school-view-products/school-view-products.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -56,6 +58,12 @@ const routes: Routes = [
   },
   {
     path:'school-prod-view/:id', component:SchoolViewProductsComponent
+  },
+  {
+  path :'register',component:RegisterComponent
+  },
+  {
+    path:'login',component:LoginComponent
   }
 ];
 

@@ -46,8 +46,8 @@
                 >
               </label>
 
-              <select class="dropdown">
-                <option value="0">Please Select</option>
+              <select class="dropdown" [(ngModel)]="size">
+                <option>Please Select</option>
                 <option *ngFor="let s of item.size" value="{{ s }}">
                   {{ s }}
                 </option>
@@ -94,15 +94,20 @@
                 class="option-name"
                 style="position: relative; top: 0px !important"
               >
-                <span class="size"
+                <span class="size" 
                   >Quantity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
                 >
               </label>
-              <input type="number" class="quantity" />
+              <!-- <input type="number" class="quantity" /> -->
+              <span>
+                <i (click)="decproduct(item.quantity)" class="fa-solid fa-minus fa-sm"></i>
+                <input readonly type="text" class="text-center" [value]="item.quantity" style="width: 40px;">
+                <i (click)=" showMyProduct(item.quantity)" class="fa-solid fa-plus fa-sm"></i>
+            </span>
             </div>
             <br />
             <div class="button">
-              <button class="btn btn-dark m-3">Add to Cart</button>
+              <button class="btn btn-dark m-3" (click)=" addToCart(item)">Add to Cart</button>
               <button class="btn btn-dark m-0">Buy Now</button>
             </div>
           </div>
