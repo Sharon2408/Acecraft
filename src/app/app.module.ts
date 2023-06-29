@@ -41,6 +41,7 @@ import { ProductsortPipe } from 'src/shared/productsort.pipe';
 import { QuantityComponent } from './quantity/quantity.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
 
 
 
@@ -72,7 +73,8 @@ import { LoginComponent } from './login/login.component';
     ProductsortPipe,
     QuantityComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    UserComponent
 
     
 

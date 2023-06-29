@@ -24,14 +24,12 @@
       <div id="setting">
         <a class="nav-link" routerLink="" aria-disabled="true"><i class="pi pi-cog" style="font-size: 1.5rem"></i></a>
         <ul id="list" class="fs-4">
-          <li routerLink="login" >
-            SignIn
+          <ng-container *ngFor="let user of user">
+          <li (click)="onSelect(user)">
+           {{user.id}}
           </li>
           <br>
-          <li routerLink="register">
-            Register
-          </li>
-          <br>
+        </ng-container>
           <li>
             Order Status
           </li>

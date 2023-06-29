@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   nav: any[] = []
   foot:any[] = []
   footicon:any[] = []
-constructor(private navcontent:ServiceService,private footcontent:ServiceService,private footicon1:ServiceService,private cart1:CartService){}
+constructor(private router:Router, private navcontent:ServiceService,private footcontent:ServiceService,private footicon1:ServiceService,private cart1:CartService){}
 
 ngOnInit(): void {
   this.navcontent.getNavitems().subscribe((res)=>this.nav=res)
@@ -29,7 +29,22 @@ ngOnInit(): void {
 }
     sidebarVisible: boolean = false;
     sidebarVisible2: boolean = false;
-}
 
+    user = [
+      {
+        "id":"login"
+      },
+      {
+        "id":"register"
+      }
+    ]
+
+    onSelect(user:any){
+   
+this.router.navigate(['/user',user.id])
+    
+   
+}
+}
 
 
