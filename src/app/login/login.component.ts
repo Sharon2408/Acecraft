@@ -7,11 +7,15 @@ import { Validators } from '@angular/forms';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+
+  onSubmit(form: any) {
+    console.log(form.value);
+  }
   myForm1!: FormGroup;
   username: FormControl | any;
   email: FormControl | any;
   password:FormControl|any;
-
+  constructor() { }
   ngOnInit(): void {
     this.username = new FormControl('', [
       Validators.required,
@@ -27,10 +31,9 @@ export class LoginComponent implements OnInit {
     this.myForm1 = new FormGroup({
       username: this.username,
       password:this.password,
+      email:this.email,
     });
     
   }
-  onSubmit(form: any) {
-    console.log(form.value);
-  }
+
 }

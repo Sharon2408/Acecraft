@@ -1,25 +1,25 @@
 <div class="container border border-1 mt-5 mb-5  ">
     <div class="row justify-content-center">
         <div class="col-4 shadow-lg mt-5 mb-5 rounded-1" style="height:500px;">
-            <h2 class="text-center text-secondary mt-3 fw-light">Login with <b>ACECRAFT</b></h2>
-            <form [formGroup]="myForm1" class="row" (ngSubmit)=" myForm1.valid && onSubmit(myForm1)" novalidate>
+            <h2 class="text-center text-secondary mt-5 fw-light">Login with <b>ACECRAFT</b></h2>
+            <form  *ngIf="myForm1" [formGroup]="myForm1" class="row" (ngSubmit)=" myForm1.valid && onSubmit(myForm1)" novalidate>
                 <div class="form-group">
-                    <div>
-                        <input type="text" class="form-control " placeholder="Username" formControlName="username"
+                    <!-- <div>
+                        <input type="text" class="form-control mt-4 " placeholder="Username" formControlName="username"
                             [ngClass]="{
                                 'is-invalid':
                                   username.errors && (username.touched || username.dirty ) ,
                                 'is-valid': username.valid
                               }" />
-                        <!--using visual feedback-->
+                        
                         <div class="invalid-feedback w-25 p-0 m-0">
-                            <!--*ngIf Directive-->
+                            
                             <strong *ngIf=" username.errors?.required">Required Field</strong>
                         </div>
                     </div>
-                    <br>
+                    <br> -->
                     <!-- Email -->
-                    <!-- <div>
+                    <div>
                                 <input type="email" class="form-control mt-2" placeholder="Email"
                                     formControlName="email" [ngClass]="{
                                 'is-invalid':
@@ -31,8 +31,9 @@
                                     <strong *ngIf="email.errors?.required">Email is required</strong>
 
                                 </div>
-                            </div> -->
+                            </div>
                     <div>
+                        <br>
                         <input type="password" class="form-control" placeholder="Password" formControlName="password"
                             [ngClass]="{'is-invalid':password.errors &&
                             (password.touched || password.dirty),'is-valid': password.valid}" required />
@@ -45,9 +46,9 @@
                         <button type="submit" [disabled]="myForm1.invalid" class="btn btn-dark btn-block">
                           Submit
                         </button>
-                      </div>
+                      </div> 
                 </div>
-                <br>
+                <small class="text-center pt-3 text-secondary"><a routerLink="" class="text-decoration-none">Forgot Password?</a></small>
             </form>
         </div>
     </div>

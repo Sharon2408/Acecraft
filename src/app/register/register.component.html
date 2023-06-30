@@ -1,1 +1,143 @@
-<p>register works!</p>
+<div class="container border border-1 mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-4 shadow-lg mt-5 mb-5 rounded-1">
+            <h2 class="text-center text-secondary mt-3 fw-light">
+                Signup with <b>ACECRAFT</b>
+            </h2>
+            <form [formGroup]="myForm1" class="row" (ngSubmit)="myForm1.valid && onSubmit(myForm1)" novalidate>
+                <div class="form-group">
+                    <div class="form-group">
+                        <input type="text" class="form-control mt-3" placeholder="First Name"
+                            formControlName="firstname" [ngClass]="{
+                'is-invalid':
+                  firstname.errors && (firstname.touched || firstname.dirty),
+                'is-valid': firstname.valid
+              }" />
+                        <!--using visual feedback-->
+                        <span class="invalid-feedback w-25 p-0 m-0">
+                            <!--*ngIf Directive-->
+                            <strong *ngIf="firstname.errors?.required">Required Field</strong>
+                        </span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last Name" formControlName="lastname"
+                            [ngClass]="{
+                'is-invalid':
+                  lastname.errors && (lastname.touched || lastname.dirty),
+                'is-valid': lastname.valid
+              }" />
+                        <!--using visual feedback-->
+                        <div class="invalid-feedback w-25 p-0 m-0">
+                            <!--*ngIf Directive-->
+                            <strong *ngIf="lastname.errors?.required">Required Field</strong>
+                        </div>
+                    </div>
+                    <br />
+                    <!-- Email -->
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" formControlName="email" [ngClass]="{
+                'is-invalid': email.errors && (email.touched || email.dirty),
+                'is-valid': email.valid
+              }" />
+
+                        <div class="invalid-feedback w-25 ">
+                            <strong *ngIf="email.errors?.required">Email is required</strong>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" formControlName="password"
+                            [ngClass]="{
+                'is-invalid':
+                  password.errors && (password.touched || password.dirty),
+                'is-valid': password.valid
+              }" required />
+                        <div class="invalid-feedback w-25 p-0 m-0">
+                            <strong *ngIf="password.errors?.required">Required Field</strong>
+                            <strong *ngIf="password.errors?.pattern">One uppercase,lowercase,number and special symbol</strong>
+                        </div>
+                    </div>
+                    <br />
+                    <br>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm Password" formControlName="confirm_password"
+                            [ngClass]="{
+                'is-invalid':
+                 confirm_password.errors && (confirm_password.touched || confirm_password.dirty),
+                'is-valid': confirm_password.valid
+              }" required />
+                        <div class="invalid-feedback w-25 p-0 m-0">
+                            <strong *ngIf="confirm_password.errors?.required">Required Field</strong>
+                            <strong *ngIf="confirm_password.errors?.pattern">Passwords not Matched</strong>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="text-center justify-content-between mb-2">
+                            <input type="radio" value="school" name="Radiobtn" class="me-1 " [ngClass]="{'is-invalid':Radiobtn.errors &&   (Radiobtn.touched || Radiobtn.dirty),'is-valid': Radiobtn.valid}"><label for="school" class="fs-6">School</label>
+                            <input type="radio" value="enterprises" class="ms-5 me-1" name="Radiobtn" [ngClass]="{'is-invalid':Radiobtn.errors &&   (Radiobtn.touched || Radiobtn.dirty),'is-valid': Radiobtn.valid}"><label for="enterprises" class="fs-6">Enterprises</label>
+                            <div class="invalid-feedback text-start fs-6 fst-normal text-danger">
+
+                                <h6 *ngIf="Radiobtn.errors?.required">Required field</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control " placeholder="Dealership Name" formControlName="Dealership" [ngClass]="{'is-invalid':Dealership.errors &&
+            (Dealership.touched || Dealership.dirty),'is-valid': Dealership.valid}" />
+
+                        <div class="invalid-feedback w-25 ">
+
+                            <h6 *ngIf="Dealership.errors?.required">Required field</h6>
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control  " placeholder="Dealership Number/Code" formControlName="DealershipNum" [ngClass]="{'is-invalid':DealershipNum.errors &&
+            (DealershipNum.touched || DealershipNum.dirty),'is-valid': DealershipNum.valid}" />
+
+                        <div class="invalid-feedback w-25 ">
+
+                            <h6 *ngIf="DealershipNum.errors?.required">Required field</h6>
+                            <h6 *ngIf="DealershipNum.errors?.pattern">Should Contain Only Number</h6>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text " class="form-control " placeholder="City" formControlName="City"/>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="State">State</label>
+                        <select class="form-control" name="State" id="" formControlName="State">
+                            <option value="">--Select state</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                          </select>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <input type="text " class="form-control " placeholder="GST Number" formControlName="GSTNum" />
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <button type="submit" [disabled]="myForm1.invalid" class="btn btn-dark btn-block">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <small class="text-center pt-3 text-secondary"><a routerLink="/login" class="text-decoration-none">Already have an account?Login?</a></small>
+            </form>
+            <br>
+        </div>
+    </div>
+</div>

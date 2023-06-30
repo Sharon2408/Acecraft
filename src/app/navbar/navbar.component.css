@@ -61,8 +61,8 @@ display:block;
     cursor: pointer;
     position: absolute;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(4, 1, 49) 100%);
-    color: #706b6b;
-    height: 505px;
+    color: #aca8a8;
+    height: 100vh;
     left: 81.4%;
     width: 250px;
 }
