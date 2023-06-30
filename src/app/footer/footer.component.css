@@ -9,10 +9,15 @@
     color: rgb(149, 149, 149);
 }
 
-.footer .col-2 {
+.footer .bord {
     border-right: solid white .1em;
     text-align: center;
 }
+
+.footer .bord:last-child {
+    border-right: solid white 0em;
+}
+
 
 .footer a:hover {
     color: white;

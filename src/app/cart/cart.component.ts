@@ -25,7 +25,7 @@ carts:cart={
 
 cartData: any = [];
 totalprice: number = 0;
-quantity:number = 1;
+quantity = 1;
 price:number=0;
 
 
@@ -56,38 +56,46 @@ delete(deleteItem: cart) {
   })
   this.ngOnInit();
 }
-onClick(){
-  this.router.navigate(['/course'])
-}
+
+
 
 cart: cart[] = [];
+cartcount=0
 ngOnInit(): void {
   this.cartSvc.getCartItems().subscribe(
     (response) => {
       this.cart = response;
+      this.cartcount=response.length;
       console.log(this.cart);
     }
   )
+  
+
+
+
+
+
   }
 
 
  
 
-  showMyProduct(productName: number) {
-    if (productName == 1 || productName < 10){
-      this.quantity++;
-      this.cartSvc.updateCart(this.cartData)
+  showMyProduct(quantity: cart) {
+    if (quantity.quantity == 1 || quantity.quantity < 10){
+      quantity.quantity++;
+      this.cartSvc.updateCart(quantity)
      
       }
-      else if(productName==10){
+      else if(quantity.quantity==10){
 Swal.fire("You can Order only 10 products")
       }
     
 }
 
-decproduct(product: number){
-  if(product < 100 && product > 1){
-  this.quantity--
+decproduct(product: cart){
+  if(product.quantity < 100 && product.quantity > 1){
+  product.quantity--
+  this.cartSvc.updateCart(product)
   }
  
 }

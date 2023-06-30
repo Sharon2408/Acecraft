@@ -32,16 +32,23 @@ ngOnInit(): void {
 
     user = [
       {
-        "id":"login"
+        "id":"login",
+        "icon":" ms-3 fas fa-sign-in"
       },
       {
-        "id":"register"
+        "id":"register",
+        "icon":"ms-3 fas fa-user-plus"
       }
     ]
 
     onSelect(user:any){
-   
-this.router.navigate(['/user',user.id])
+      console.log(user)
+      if(user.id=='login'){
+        this.router.navigate(['login']);
+      }
+      if(user.id=='register'){
+        this.router.navigate(['register']);
+      }
     
    
 }

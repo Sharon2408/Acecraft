@@ -1,12 +1,12 @@
 <div class="container-fluid bg1">
   <div class="row bg-light">
-    <div class="col">
-    <div class="d-flex container justify-content-around" >
+    <div class="col ">
+    <div class="d-flex container justify-content-around mt-3 mb-3" >
       <ng-container  *ngFor="let school of school">
       <a [routerLink]="school.routerLink">  <img class="img" [src]="school.img" alt="" height="51.8px" width="50px"> </a>
       </ng-container>
     </div>
-    <div class="d-flex container justify-content-around fw-light ">
+    <!-- <div class="d-flex container justify-content-around fw-light ">
       <p class="text-center ms-5">JGI</p>
       <p class="ms-5 text-center">RV</p>
       <p class="text-center ms-5">SOPHIA</p>
@@ -14,7 +14,7 @@
       <p class="text-center me-3">NEW HORIZON <br> GURUKUL</p>
       <p class="text-center me-5">CISB</p>
       <p class="text-center me-4">NIHS</p>
-    </div>
+    </div> -->
   </div>
     </div>
     <section>

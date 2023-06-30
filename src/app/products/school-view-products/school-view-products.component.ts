@@ -32,16 +32,16 @@ export class SchoolViewProductsComponent implements OnInit{
     size:0,
     price:0,
     totalPrice:0,
-    quantity:0 
+    quantity:1 
   }
-  quantity:number=1;
+  // quantity:number=1;
   size:number=28;
 
   addToCart(item:any){
     this.cartitem.title=item.title;
     this.cartitem.img=item.imgSrc;
     this.cartitem.price=item.price;
-    this.cartitem.quantity=this.quantity;
+    this.cartitem.quantity=this.cartitem.quantity;
     this.cartitem.id=item.id;
     this.cartitem.size=this.size
     this.cart.addToCart(this.cartitem);

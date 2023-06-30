@@ -64,9 +64,10 @@ const routes: Routes = [
     path:'user',component:UserComponent
   },
   {
-    path:'user/:id',component:LoginComponent,
+    path:'login',component:LoginComponent,
   },
-  {path:'user1/:id',component:RegisterComponent
+  {
+    path:'register',component:RegisterComponent
   },
 ];
 

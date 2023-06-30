@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
-    <!-- <div  style="height: 361px;" >
+    <div  style="height: 361px;" *ngIf="cartcount<1" >
       <ng-container>
       <h4 class="pt-5" >Your Shopping cart is Empty!</h4>
       <h5 class="pt-3" > <a routerLink="" class="btn btn-outline-dark">Continue shopping</a></h5>
     </ng-container>
-    </div> -->
-    
+    </div>
+    <div *ngIf="cartcount>0" >
     <h2  class="text-center pt-5 pb-5 fw-lighter" >
       Your bag total is {{ totalPrice(cart) | currency : "INR" : "symbol" }}
     </h2>
@@ -24,20 +24,21 @@
       <h3 class="ms-5">{{x.title}} <br> size:{{x.size}}</h3>
      
       <span>
-        <i (click)="decproduct(quantity)" class="fa-solid fa-minus fa-sm"></i>
-        <input readonly type="text" class="text-center" value="{{quantity}}" style="width: 40px;">
-        <i (click)=" showMyProduct(quantity)" class="fa-solid fa-plus fa-sm"></i>
+        <i (click)="decproduct(x)" class="fa-solid fa-minus fa-sm"></i>
+        <input readonly type="text" class="text-center" value="{{x.quantity}}" style="width: 40px;">
+        <i (click)=" showMyProduct(x)" class="fa-solid fa-plus fa-sm"></i>
     </span>
-     <h1  class="ms-5">{{ x.price | currency : "INR" : "symbol" }} <br> <h6><a  style="color: red;" (click)="delete(x)">Remove</a></h6></h1>
-     
+     <h4  class="ms-5">{{ x.price | currency : "INR" : "symbol" }} <br> <h6><a  style="color: red;" (click)="delete(x)">Remove</a></h6></h4>
+     <br>
+     <h6>Total Price: {{ x.price*x.quantity | currency : "INR" : "symbol" }}  </h6>
     </div>
     <hr>
   </ng-container>
   </div>
 </div>
+</div>
 
-
-<div class="container" style="height: 200px;">
+<div class="container" style="height: 200px;" *ngIf="cartcount>0">
   <div class="row">
     <div class="col-5">
       <h4 class="fw-lighter">Enter Coupon code here</h4>
@@ -57,3 +58,4 @@
     </div>
   </div>
 </div>
+

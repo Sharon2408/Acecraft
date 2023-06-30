@@ -100,9 +100,9 @@
               </label>
               <!-- <input type="number" class="quantity" /> -->
               <span>
-                <i (click)="decproduct(item.quantity)" class="fa-solid fa-minus fa-sm"></i>
-                <input readonly type="text" class="text-center" [value]="item.quantity" style="width: 40px;">
-                <i (click)=" showMyProduct(item.quantity)" class="fa-solid fa-plus fa-sm"></i>
+                
+                <input type="number" class="text-center" min="1" max="10" [(ngModel)]="cartitem.quantity" name="quantity" style="width: 40px;">
+               
             </span>
             </div>
             <br />
