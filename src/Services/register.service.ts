@@ -17,6 +17,9 @@ export class RegisterService {
 
   }
 
+
+
+
   getCred(){
     return this.http.get(this.registerurl)
   }
@@ -25,7 +28,8 @@ export class RegisterService {
     return this.http.get(this.registerurl,id)
   }
 
-  isloggedin(){
-    return sessionStorage.getItem('email')!=null;
+  isActive(id:Register){
+    let reg = this.registerurl +'/'+ id.id
+    return this.http.put<Register[]>(reg,id).subscribe(()=>{})
   }
 }

@@ -24,6 +24,7 @@ export class RegisterComponent implements OnInit {
       form.value = res;
       this.myForm1.reset();
       this.messageService.add({
+        key: 'tc',
         severity: 'success',
         summary: 'Success',
         detail: 'Registration Successful',

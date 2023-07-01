@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import { ServiceService } from 'src/Services/service.service';
 import { CartService } from 'src/Services/cart.service';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-navbar',
@@ -9,13 +10,15 @@ import { CartService } from 'src/Services/cart.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  constructor(private router:Router, private navcontent:ServiceService,private footcontent:ServiceService,private footicon1:ServiceService,private cart1:CartService,private alert:MessageService){}
+
   val:number=0;
   nav: any[] = []
   foot:any[] = []
   footicon:any[] = []
-constructor(private router:Router, private navcontent:ServiceService,private footcontent:ServiceService,private footicon1:ServiceService,private cart1:CartService){}
 
 ngOnInit(): void {
+
   this.navcontent.getNavitems().subscribe((res)=>this.nav=res)
   this.footcontent.getFooter().subscribe((res)=>this.foot=res)
   this.footicon1.getIcons().subscribe((res)=>this.footicon=res)

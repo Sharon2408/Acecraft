@@ -6,6 +6,7 @@ import { ServiceService } from 'src/Services/service.service';
 import { CartService } from 'src/Services/cart.service';
 import { cart } from 'src/Models/cart';
 import Swal from 'sweetalert2';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-school-view-products',
@@ -14,14 +15,19 @@ import Swal from 'sweetalert2';
 })
 export class SchoolViewProductsComponent implements OnInit{
 
-  productId!: number;
 
   constructor(
     private productview: ServiceService,
     private router: Router,
     private actRoute: ActivatedRoute,
-    private cart: CartService
+    private cart: CartService,
+    private alert:MessageService
   ) {}
+
+
+  productId!: number;
+
+
 
   products:any[] = [];
 
@@ -46,18 +52,12 @@ export class SchoolViewProductsComponent implements OnInit{
     this.cartitem.size=this.size
     this.cart.addToCart(this.cartitem);
     console.log(item.id);
-    const Toast = Swal.mixin({
-      toast: true,
-      position: 'top',
-      showConfirmButton: false,
-      timer: 3000,
-      timerProgressBar: true,
-    })
-
-    Toast.fire({
-      icon: 'success',
-      title: 'Item added successfully'
-    })
+    this.alert.add({
+      key: 'tc',
+      severity: 'info',
+      summary: 'Yaayy!!',
+      detail: 'Product Added to your cart',
+    });
     this.cart.getCount();
   }
 

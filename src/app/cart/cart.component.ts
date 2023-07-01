@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { CartService } from 'src/Services/cart.service';
 import { cart } from 'src/Models/cart';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-cart',
@@ -11,7 +12,7 @@ import { cart } from 'src/Models/cart';
 })
 export class CartComponent implements OnInit {
   
-constructor(private cartSvc: CartService, private router:Router){}
+constructor(private cartSvc: CartService, private router:Router,private alert:MessageService){}
   
 carts:cart={
   id:0,
@@ -42,18 +43,12 @@ delete(deleteItem: cart) {
   this.cartSvc.removeItemFromCart(deleteItem).subscribe(
     () => console.log(deleteItem.title)      
   )
-  const Toast = Swal.mixin({
-    toast: true,
-    position: 'top',
-    showConfirmButton: false,
-    timer: 3000,
-    timerProgressBar: true,
-  })
-
-  Toast.fire({
-    icon: 'error',
-    title: 'Item deleted successfully'
-  })
+  this.alert.add({
+    key: 'tc',
+    severity: 'error',
+    summary: 'Oops!',
+    detail: 'An Item was Deleted',
+  });
   this.ngOnInit();
 }
 

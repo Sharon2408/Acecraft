@@ -4,20 +4,7 @@
             <h2 class="text-center text-secondary mt-5 fw-light">Login with <b>ACECRAFT</b></h2>
             <form  *ngIf="myForm1" [formGroup]="myForm1" class="row" (ngSubmit)=" myForm1.valid && onSubmit(myForm1)" novalidate>
                 <div class="form-group">
-                    <!-- <div>
-                        <input type="text" class="form-control mt-4 " placeholder="Username" formControlName="username"
-                            [ngClass]="{
-                                'is-invalid':
-                                  username.errors && (username.touched || username.dirty ) ,
-                                'is-valid': username.valid
-                              }" />
-                        
-                        <div class="invalid-feedback w-25 p-0 m-0">
-                            
-                            <strong *ngIf=" username.errors?.required">Required Field</strong>
-                        </div>
-                    </div>
-                    <br> -->
+                  
                     <!-- Email -->
                     <div>
                                 <input type="email" class="form-control mt-2" placeholder="Email"
@@ -34,7 +21,7 @@
                             </div>
                     <div>
                         <br>
-                        <p-toast></p-toast>
+                        <p-toast position="top-center" key="tc"></p-toast>
                         <input type="password" class="form-control" placeholder="Password" formControlName="password"
                             [ngClass]="{'is-invalid':password.errors &&
                             (password.touched || password.dirty),'is-valid': password.valid}" required />

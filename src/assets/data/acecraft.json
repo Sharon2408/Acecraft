@@ -450,17 +450,7 @@
       "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d708bcbfb666ae1149973/webp/cisb-shorts-640x640.jpg"
     }
   ],
-  "cart": [
-    {
-      "id": 2,
-      "title": "NHG Shirt (Boys)",
-      "img": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345c6/images/5aa0f5c6f04705ab2ca345c7/5aa0f5d0f04705ab2ca345f9/webp/5aa0f5d0f04705ab2ca345f9-480x480.jpg",
-      "size": 28,
-      "price": 355,
-      "totalPrice": 0,
-      "quantity": 1
-    }
-  ],
+  "cart": [],
   "register": [
     {
       "firstname": "Sharon",

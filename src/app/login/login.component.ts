@@ -4,6 +4,7 @@ import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { RegisterService } from 'src/Services/register.service';
 import { MessageService } from 'primeng/api';
+import { Register } from 'src/Models/register';
 
 @Component({
   selector: 'app-login',
@@ -11,37 +12,63 @@ import { MessageService } from 'primeng/api';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+
+  constructor(
+    private regservice: RegisterService,
+    private router: Router,
+    private alert: MessageService,
+  ) {}
+
+
+
+
+  
   userdata: any;
   myForm1!: FormGroup;
   //username: FormControl | any;
   email: FormControl | any;
   password: FormControl | any;
  
-  constructor(
-    private regservice: RegisterService,
-    private router: Router,
-    private alert: MessageService
-  ) {}
+
+
+
+
+
 
   onSubmit(form: any) {
-    console.log(form.value.email);
+    console.log(form.value.id);
     this.regservice.getCred().subscribe((res)=>{
 this.userdata=res
+
       const user = this.userdata.find((a:any)=>{
-        return a.email === this.myForm1.value.email && a.password === this.myForm1.value.password 
+        console.log(a.id)
+        return a.email === this.myForm1.value.email && a.password === this.myForm1.value.password;
+       
       })
       if(user){
+        // this.regservice.getCred().subscribe((res)=>{
+        //   this.userdata=res;
+          console.log(this.userdata)
+          //this.regservice.isActive(this.userdata.id).subscribe((result)=>{this.userdata.i})
+        //})
+        
         this.myForm1.reset();
-        this.router.navigate(['','/'])
-       
-      
+        this.router.navigate(['','/']);
+        this.alert.add({
+          key: 'tc',
+          severity: 'success',
+          summary: 'success',
+          detail: 'Login Successful',
+        });
       }
       else{
         this.alert.add({
+          key: 'tc',
           severity: 'error',
-          summary: 'error',
-          detail: 'User Not Found',
+          summary: 'User Not Found',
+          detail: 'Invalid Credentials',
         });
+        this.myForm1.reset();
       }
 
     })
@@ -54,11 +81,7 @@ this.userdata=res
  
 
   ngOnInit(): void {
-    // this.username = new FormControl('', [
-    //   Validators.required,
-    //   Validators.minLength(3),
-    //   Validators.maxLength(16),
-    // ]);
+  
     this.password = new FormControl('', [
       Validators.required,
       Validators.pattern(
@@ -67,7 +90,6 @@ this.userdata=res
     ]);
     this.email = new FormControl('', [Validators.required, Validators.email]);
     this.myForm1 = new FormGroup({
-      // username: this.username,
       password: this.password,
       email: this.email,
     });
