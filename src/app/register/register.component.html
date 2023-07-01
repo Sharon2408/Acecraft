@@ -75,8 +75,8 @@
                     <br>
                     <div class="form-group">
                         <div class="text-center justify-content-between mb-2">
-                            <input type="radio" value="school" name="Radiobtn" class="me-1 " [ngClass]="{'is-invalid':Radiobtn.errors &&   (Radiobtn.touched || Radiobtn.dirty),'is-valid': Radiobtn.valid}"><label for="school" class="fs-6">School</label>
-                            <input type="radio" value="enterprises" class="ms-5 me-1" name="Radiobtn" [ngClass]="{'is-invalid':Radiobtn.errors &&   (Radiobtn.touched || Radiobtn.dirty),'is-valid': Radiobtn.valid}"><label for="enterprises" class="fs-6">Enterprises</label>
+                            <input type="radio" formControlName="Radiobtn" value="school" name="Radiobtn" class="me-1 " [ngClass]="{'is-invalid':Radiobtn.errors &&   (Radiobtn.touched || Radiobtn.dirty),'is-valid': Radiobtn.valid}"><label for="school" class="fs-6">School</label>
+                            <input type="radio" formControlName="Radiobtn" value="enterprises" class="ms-5 me-1" name="Radiobtn" [ngClass]="{'is-invalid':Radiobtn.errors &&   (Radiobtn.touched || Radiobtn.dirty),'is-valid': Radiobtn.valid}"><label for="enterprises" class="fs-6">Enterprises</label>
                             <div class="invalid-feedback text-start fs-6 fst-normal text-danger">
 
                                 <h6 *ngIf="Radiobtn.errors?.required">Required field</h6>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <br>
-                    <div class="form-group">
+                     <div class="form-group">
                         <input type="text " class="form-control " placeholder="City" formControlName="City"/>
                     </div>
                     <br>
@@ -124,14 +124,15 @@
                     </div>
                     <br>
                     <br>
-                    <div class="form-group">
+                   <div class="form-group">
                         <input type="text " class="form-control " placeholder="GST Number" formControlName="GSTNum" />
                     </div>
                     <br>
                     <br>
+                    <p-toast></p-toast>
                     <div class="form-group">
                         <button type="submit" [disabled]="myForm1.invalid" class="btn btn-dark btn-block">
-                            Submit
+                            Register
                         </button>
                     </div>
                 </div>

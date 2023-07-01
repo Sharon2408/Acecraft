@@ -1,6 +1,6 @@
 
 a {
-    color: grey;
+    color: grey !important;
     text-decoration: none;
 }
 

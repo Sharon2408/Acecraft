@@ -1,0 +1,211 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* =================
+    BANNER
+   =================*/
+
+.banner {
+    background-image: url(/assets/images/banner.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 350px 0 200px;
+    position: relative;
+    z-index: 0;
+}
+
+.banner #content-img-1 {
+    position: absolute;
+    z-index: 1;
+    margin-top: -200px;
+    color: #978f8f;
+}
+
+.banner b {
+    font-size: 35px !important;
+}
+
+.banner h4 span {
+    padding: 0 1em;
+    font-weight: 700;
+}
+
+/* ================
+    MAIN CONTENT
+   ================ */
+
+.main-content {
+    background-color: #b2b3b5;
+    padding-bottom: 60px;
+}
+
+.main-content b {
+    font-size: 32px;
+    color: #978f8f;
+}
+
+.main-content p {
+    font-size: 15px;
+}
+
+#row2 {
+    padding-top: 5em;
+}
+
+#row2 b {
+    margin-left: 2.7em;
+}
+
+#row2 p {
+    margin-left: 6em;
+    margin-right: 4em;
+}
+
+/* ================
+   BANNER-2
+   ================*/
+#banner-2 {
+    background-image: url(/assets/images/banner_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 350px 0 200px;
+    position: relative;
+    z-index: 0;
+    margin-top: 47px;
+}
+
+.banner-2 #content-img-2 {
+    position: absolute;
+    margin-top: -100px;
+    z-index: 1;
+    color: #978f8f;
+}
+
+.banner-2 b {
+    font-size: 35px;
+}
+
+/* =================
+   CAROUSEL
+   ================= */
+
+.carousel {
+    background-color: black;
+}
+
+.carousel .container {
+    padding: 75px 0;
+}
+
+.carousel b {
+    font-size: 39px;
+    color: #978f8f;
+}
+
+.carousel span {
+    font-size: 18px;
+    color: #978f8f;
+}
+
+.carousel-control-prev {
+    margin-left: -100px;
+}
+
+#carouselExampleControls {
+    width: 85%;
+}
+
+/* =================
+    BANNER-3
+   =================*/
+
+.banner-3 {
+    background-image: url(/assets/images/banner_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0 350px;
+    position: relative;
+    z-index: 0;
+}
+
+.banner-3 span {
+    font-size: 24px;
+    color: #978f8f;
+}
+
+.banner-3 h5 {
+    font-size: 22px;
+    font-weight: lighter;
+    color: #978f8f;
+}
+
+#content-img-3 {
+    margin-top: 100px;
+    position: absolute;
+    z-index: 1;
+}
+
+em {
+    color: #978f8f;
+}
+
+.banner-3 em:before,
+.banner-3 em::after {
+    display: inline-block;
+    content: "";
+    border-top: .10rem solid #978f8f;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(0rem);
+}
+
+
+/* ====================
+    MEDIA 500PX 
+=======================*/
+@media (max-width:500px) {
+    #row2 b {
+        margin: 0%;
+    }
+
+    #row2 p {
+        margin: 0%;
+    }
+
+    .main-content {
+        padding-bottom: 0px;
+    }
+
+    #banner-2 {
+        background-image: url(/assets/images/banner_2_mob_img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 490px 0 300px;
+        position: relative;
+        z-index: 0;
+        margin-top: 0px;
+    }
+
+    #carouselExampleControls {
+        width: 100%;
+    }
+
+    .carousel .container {
+        padding: 0 0;
+    }
+
+    .banner #content-img-1 {
+        color: #000000;
+    }
+
+    .banner h4 span {
+        padding: 0;
+        font-weight: 400;
+    }
+}

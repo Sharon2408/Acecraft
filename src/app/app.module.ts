@@ -42,8 +42,8 @@ import { QuantityComponent } from './quantity/quantity.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
-
-
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 
 
@@ -98,11 +98,12 @@ import { UserComponent } from './user/user.component';
     TimelineModule,
     StepsModule,
     DialogModule,
-    BadgeModule
+    BadgeModule,
+    ToastModule
     
   
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

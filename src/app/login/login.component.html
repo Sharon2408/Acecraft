@@ -27,13 +27,14 @@
                                 'is-valid': email.valid
                               }" />
 
-                                <div class="invalid-feedback">
+                                <div class="invalid-feedback w-25">
                                     <strong *ngIf="email.errors?.required">Email is required</strong>
 
                                 </div>
                             </div>
                     <div>
                         <br>
+                        <p-toast></p-toast>
                         <input type="password" class="form-control" placeholder="Password" formControlName="password"
                             [ngClass]="{'is-invalid':password.errors &&
                             (password.touched || password.dirty),'is-valid': password.valid}" required />
