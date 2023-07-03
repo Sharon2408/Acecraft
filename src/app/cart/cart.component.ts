@@ -31,7 +31,7 @@ price:number=0;
 
 
 totalPrice(data: any) {
-  debugger
+
   const intialValue = 0;
   this.cartData = data
   const a = this.cartData.reduce((sum: any, item: any) => sum + (item.price * item.quantity), intialValue);
