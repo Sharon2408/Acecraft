@@ -43,4 +43,8 @@ export class ServiceService {
   getProductsById(id: number) {
     return this.http.get<Products[]>(this.products + '?id=' + id);
   }
+
+  getNotesById(id:number){
+    return this.http.get<Models[]>(this.cardurl + '?id=' + id);
+  }
 }

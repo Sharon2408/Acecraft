@@ -35,12 +35,10 @@ const routes: Routes = [
   {
     path: 'notes',
     component: NotesComponent,
-    children: [
-      {
-        path: 'notessub1/:id',
-        component: StylingAccessoriesThatComplementYourFormalWearComponent,
-      },
-    ],
+  },
+  {
+    path: 'notessub1/:id',
+    component: StylingAccessoriesThatComplementYourFormalWearComponent,
   },
   {
     path: 'airen',
@@ -55,19 +53,19 @@ const routes: Routes = [
     component: NoteCard1Component,
   },
   {
-    path:'products',component:ProductsComponent
+    path: 'products', component: ProductsComponent
   },
   {
-    path:'school-prod-view/:id', component:SchoolViewProductsComponent
+    path: 'school-prod-view/:id', component: SchoolViewProductsComponent
   },
   {
-    path:'user',component:UserComponent
+    path: 'user', component: UserComponent
   },
   {
-    path:'login',component:LoginComponent,
+    path: 'login', component: LoginComponent,
   },
   {
-    path:'register',component:RegisterComponent
+    path: 'register', component: RegisterComponent
   },
 ];
 
@@ -75,4 +73,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
