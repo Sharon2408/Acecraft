@@ -7,6 +7,8 @@
     display: block;
     width: 100%;
     height: auto;
+    position: relative;
+    z-index: 0;
 }
 
 .text {
@@ -25,9 +27,10 @@
     position:absolute;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    margin-top: 550px;
-    margin-left: -770px ;
     font-weight: bolder;
+    margin-left: 42%;
+    margin-top: 40%;
+   
 }
 
 .card1-text{

@@ -66,22 +66,22 @@
 <p-sidebar [(visible)]="sidebarVisible">
   <ng-template pTemplate="header" [ngStyle]="{ backgroundColor: 'var(--primary-color)' }">SHOP FOR</ng-template>
   <ng-container *ngFor="let x of nav">
-    <p class="" [routerLink]="x.routerLink">{{ x.navitem | uppercase }}</p>
+    <p class="" [routerLink]="x.routerLink" (click)="sidebarVisible=false">{{ x.navitem | uppercase }}</p>
     <hr />
   </ng-container>
   <ng-container *ngFor="let x of foot">
-    <p>{{ x.name | uppercase }}</p>
+    <p (click)="sidebarVisible2=false">{{ x.name | uppercase }}</p>
     <hr />
   </ng-container>
-  <a *ngFor="let x of footicon" [href]="x.link">
+  <a *ngFor="let x of footicon" [href]="x.link" (click)="sidebarVisible2=false">
     <img class="" [src]="x.icon" /></a>
 </p-sidebar>
 
 <!-- Right side bar -->
 <p-sidebar [(visible)]="sidebarVisible2" position="right">
-  <h6 routerLink="/login">Login</h6>
+  <h6 routerLink="/login" (click)="sidebarVisible2=false">Login</h6>
   <hr>
-  <h6 routerLink="/register">Register</h6>
+  <h6 routerLink="/register" (click)="sidebarVisible2=false">Register</h6>
   <hr>
   <h6>Order Status</h6>
   <hr>

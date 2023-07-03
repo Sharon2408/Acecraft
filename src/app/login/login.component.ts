@@ -12,56 +12,44 @@ import { Register } from 'src/Models/register';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-
   constructor(
     private regservice: RegisterService,
     private router: Router,
-    private alert: MessageService,
+    private alert: MessageService
   ) {}
 
-
-
-
-  
   userdata: any;
   myForm1!: FormGroup;
   //username: FormControl | any;
   email: FormControl | any;
   password: FormControl | any;
- 
-
-
-
-
-
 
   onSubmit(form: any) {
-    console.log(form.value.id);
-    this.regservice.getCred().subscribe((res)=>{
-this.userdata=res
+    //console.log(form.value.email);
+    this.regservice.getCred().subscribe((res) => {
+      this.userdata = res;
 
-      const user = this.userdata.find((a:any)=>{
-        console.log(a.id)
-        return a.email === this.myForm1.value.email && a.password === this.myForm1.value.password;
-       
-      })
-      if(user){
-        // this.regservice.getCred().subscribe((res)=>{
-        //   this.userdata=res;
-          console.log(this.userdata)
-          //this.regservice.isActive(this.userdata.id).subscribe((result)=>{this.userdata.i})
-        //})
-        
+      const user = this.userdata.find((a: any) => {
+        if (
+          a.email === this.myForm1.value.email &&
+          a.password === this.myForm1.value.password
+        ) {
+          this.regservice.isActive(a, a.id);
+          return true;
+        }
+        return false;
+      });
+      if (user) {
+        console.log(this.userdata.id);
         this.myForm1.reset();
-        this.router.navigate(['','/']);
+        this.router.navigate(['', '/']);
         this.alert.add({
           key: 'tc',
           severity: 'success',
           summary: 'success',
           detail: 'Login Successful',
         });
-      }
-      else{
+      } else {
         this.alert.add({
           key: 'tc',
           severity: 'error',
@@ -70,18 +58,15 @@ this.userdata=res
         });
         this.myForm1.reset();
       }
-
-    })
+    });
     // return this.regservice.login(form.value.email).subscribe((res) => {
     //   this.userdata = res;
     //   console.log(this.userdata);
-      
+
     // });
   }
- 
 
   ngOnInit(): void {
-  
     this.password = new FormControl('', [
       Validators.required,
       Validators.pattern(
