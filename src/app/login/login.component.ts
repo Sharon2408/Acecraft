@@ -4,7 +4,9 @@ import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { RegisterService } from 'src/Services/register.service';
 import { MessageService } from 'primeng/api';
-import { Register } from 'src/Models/register';
+
+
+
 
 @Component({
   selector: 'app-login',
@@ -34,7 +36,7 @@ export class LoginComponent implements OnInit {
           a.email === this.myForm1.value.email &&
           a.password === this.myForm1.value.password
         ) {
-          this.regservice.isActive(a, a.id);
+          this.regservice.isActive(a, a.id,);
           return true;
         }
         return false;
@@ -42,6 +44,7 @@ export class LoginComponent implements OnInit {
       if (user) {
         console.log(this.userdata.id);
         this.myForm1.reset();
+        localStorage.setItem('token', Math.random().toString())
         this.router.navigate(['', '/']);
         this.alert.add({
           key: 'tc',

@@ -14,11 +14,12 @@ import { SchoolViewProductsComponent } from './products/school-view-products/sch
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { authGuard } from './auth.guard';
 
 const routes: Routes = [
   {
     path: 'school',
-    component: SchoolComponent,
+    component: SchoolComponent,canActivate:[authGuard]
   },
   {
     path: '',
@@ -53,16 +54,16 @@ const routes: Routes = [
     component: NoteCard1Component,
   },
   {
-    path: 'products', component: ProductsComponent
+    path: 'products', component: ProductsComponent,
   },
   {
-    path: 'school-prod-view/:id', component: SchoolViewProductsComponent
+    path: 'school-prod-view/:id', component: SchoolViewProductsComponent,
   },
   {
     path: 'user', component: UserComponent
   },
   {
-    path: 'login', component: LoginComponent,
+    path: 'login', component: LoginComponent
   },
   {
     path: 'register', component: RegisterComponent

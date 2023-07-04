@@ -44,6 +44,7 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { authGuard } from './auth.guard';
 
 
 
@@ -74,7 +75,7 @@ import { MessageService } from 'primeng/api';
     QuantityComponent,
     RegisterComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
 
     
 
@@ -99,7 +100,7 @@ import { MessageService } from 'primeng/api';
     StepsModule,
     DialogModule,
     BadgeModule,
-    ToastModule
+    ToastModule,
     
   
   ],

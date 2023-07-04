@@ -5,19 +5,32 @@
       "id": 1,
       "mh1": "Nov 16, 2019",
       "mp1": "Formal wear only serves as the base - it’s the accessories you adorn that perfect the quintessential formal look.However, styling plays a massive role in the same. It should ideally have a little bit of everything to make your formal look a truly distinctive one. Here are a few tips on how you can style your formal wear: ",
-      "h3":"Accessories For Men - Tips: ",
-      "sh1":" Pocket Squares",
-      "sp1":"- These are a great, suave addition to your formal look. It’s not always necessary that your pocket square should match your formal wear - it just shouldn't clash with it drastically.",
-      "sh2":"Cufflinks",
-      "sp2":"- Cufflinks add a touch of class to your suit. Adding cufflinks to your shirt will keep it firm and in place as well.",
-      "sh3":"Watches",
-      "sp3":"- Your watch should be just as dressy as the suit your wear. Watches made from stainless steel are a great complement to your meeting look.",
-      "sh4":"Tie Clip",
-      "sh5":"Belt",
-      "sh6":"Footwear ",
-      "sp4":" - The best way to complete your formal look (and also keep your tie in place) is to go for a simple tie clip. It also works to keep your tie neat and wrinkle-free throughout the day!",
-      "sp5":"- Leather belts are always a popular choice. An essential tip is to always match your belt with your formal shoes.",
-      "sp6":"- Footwear is arguably one of the most important pieces of clothing in an outfit for men. Always opt for leather or suede as it rounds off your formal look with a refined touch."
+      "h3": "Accessories For Men - Tips: ",
+      "h4": "Accessories For Women - Tips:",
+      "sh1": " Pocket Squares",
+      "sh2": "Cufflinks",
+      "sh3": "Watches",
+      "sh4": "Tie Clip",
+      "sh5": "Belt",
+      "sh6": "Footwear ",
+      "sh7": " Scarves",
+      "sh8": "Belt",
+      "sh9": "Jewellery",
+      "sh10": "Purse/Handbag",
+      "sh11": "Hosiery",
+      "sp1": "- These are a great, suave addition to your formal look. It’s not always necessary that your pocket square should match your formal wear - it just shouldn't clash with it drastically.",
+      "sp2": "- Cufflinks add a touch of class to your suit. Adding cufflinks to your shirt will keep it firm and in place as well.",
+      "sp3": "- Your watch should be just as dressy as the suit your wear. Watches made from stainless steel are a great complement to your meeting look.",
+      "sp4": " - The best way to complete your formal look (and also keep your tie in place) is to go for a simple tie clip. It also works to keep your tie neat and wrinkle-free throughout the day!",
+      "sp5": "- Leather belts are always a popular choice. An essential tip is to always match your belt with your formal shoes.",
+      "sp6": "- Footwear is arguably one of the most important pieces of clothing in an outfit for men. Always opt for leather or suede as it rounds off your formal look with a refined touch.",
+      "sp7": " - If you’re feeling chilly or if the weather allows for it, it’s always good to wear a professional-looking scarf with a suit. Just keep in mind that the scarves you choose should be accessory ones, and not winter scarves.",
+      "sp8": "- A thin belt accentuates any woman’s figure, so it’s essential for you to choose a slim one that is in a contrast colour from your outfit. The belt and shoe rule that is a must for men doesn’t usually apply for women, though.",
+      "sp9": " - If you’re heading for any formal event, avoid wearing large costume jewellery. Earrings should be conservative and small. Necklaces are acceptable, as long as they are delicate or are pendants. An elegant watch is a must",
+      "sp10": "- Always opt for a classy leather bag that can fit all your essentials like your laptop. This adds a touch of professionalism to your look.",
+      "sp11": " - If you’re wearing hosiery, it should always suit your skin tone, and should not have any distracting patterns or designs.",
+      "conclusion": "Conclusion",
+      "conclusioncontent": "For both men and women, getting your accessories right is an integral part of nailing the formal look. However, unless the base is right, the impact you create won’t be an effective one - start by finding customised workwear that complements your frame to a tee at Acecraft!"
     },
     {
       "name": "5 classic looks for her",
@@ -167,10 +180,26 @@
       "originalPrice": 750,
       "offerPercent": 40,
       "gender": "all",
-      "size": [20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40],
+      "size": [
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40
+      ],
       "lengthFlag": false,
-      "length": [0],
-      "description": ["Made from Poly-cotton. Henley neckline. Short sleeves."],
+      "length": [
+        0
+      ],
+      "description": [
+        "Made from Poly-cotton. Henley neckline. Short sleeves."
+      ],
       "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg"
     },
     {
@@ -183,9 +212,25 @@
       "originalPrice": 535,
       "offerPercent": 34,
       "gender": "",
-      "size": [20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44],
+      "size": [
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
       "lengthFlag": false,
-      "length": [0],
+      "length": [
+        0
+      ],
       "description": [
         "Made from a fine blend of Cotton and Polyester yarn.",
         "Spread collar.",
@@ -205,10 +250,24 @@
       "originalPrice": 825,
       "offerPercent": 39,
       "gender": "all",
-      "size": [26, 28, 30, 32, 34, 36, 38, 40, 42],
+      "size": [
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42
+      ],
       "lengthFlag": false,
-      "length": [0],
-      "description": ["Made from Poly-cotton. Henley neckline. Short sleeves."],
+      "length": [
+        0
+      ],
+      "description": [
+        "Made from Poly-cotton. Henley neckline. Short sleeves."
+      ],
       "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg"
     },
     {
@@ -221,10 +280,30 @@
       "originalPrice": 535,
       "offerPercent": 34,
       "gender": "all",
-      "size": [18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46],
+      "size": [
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46
+      ],
       "lengthFlag": false,
-      "length": [0],
-      "description": [""],
+      "length": [
+        0
+      ],
+      "description": [
+        ""
+      ],
       "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
     },
     {
@@ -237,10 +316,24 @@
       "originalPrice": 825,
       "offerPercent": 39,
       "gender": "all",
-      "size": [28, 30, 32, 34, 36, 38, 40, 42, 44],
+      "size": [
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
       "lengthFlag": false,
-      "length": [0],
-      "description": ["Made from Poly-cotton.Henley neckline.Short sleeves."],
+      "length": [
+        0
+      ],
+      "description": [
+        "Made from Poly-cotton.Henley neckline.Short sleeves."
+      ],
       "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg"
     },
     {
@@ -253,10 +346,30 @@
       "originalPrice": 580,
       "offerPercent": 34,
       "gender": "",
-      "size": [20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40],
+      "size": [
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40
+      ],
       "lengthFlag": true,
-      "length": [12, 14, 16, 18, 20],
-      "description": ["Twill Texture Formal Shorts.Poly-Viscose Fabric."],
+      "length": [
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "description": [
+        "Twill Texture Formal Shorts.Poly-Viscose Fabric."
+      ],
       "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f3385f/images/5aa0f01491c2e5ab32f33860/5aa0f01d91c2e5ab32f33897/webp/5aa0f01d91c2e5ab32f33897-640x640.jpg"
     },
     {
@@ -269,8 +382,19 @@
       "originalPrice": 825,
       "offerPercent": 39,
       "gender": "all ",
-      "size": [30, 32, 34, 36, 38, 40, 42, 44],
-      "description": ["Made from Poly-cotton. Henley neckline. Short sleeves."],
+      "size": [
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
+      "description": [
+        "Made from Poly-cotton. Henley neckline. Short sleeves."
+      ],
       "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/601d706374c88c6b06d39dc1/webp/h-school-640x640.jpg"
     },
     {
@@ -283,10 +407,31 @@
       "originalPrice": 910,
       "offerPercent": 34,
       "gender": "all",
-      "size": [22, 24, 26, 28, 30, 32, 34, 36, 38, 40],
+      "size": [
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40
+      ],
       "lengthFlag": true,
-      "length": [32, 34, 36, 38, 40, 42, 44],
-      "description": ["Twill Texture Formal trouser.Poly-Viscose Fabric."],
+      "length": [
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
+      "description": [
+        "Twill Texture Formal trouser.Poly-Viscose Fabric."
+      ],
       "imgSrc": "https://d2pyicwmjx3wii.cloudfront.net/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33832/images/5aa0f01491c2e5ab32f33833/5aa0f01e91c2e5ab32f338a1/webp/5aa0f01e91c2e5ab32f338a1-640x640.jpg"
     },
     {
@@ -299,9 +444,28 @@
       "originalPrice": 793,
       "offerPercent": 40,
       "gender": "all",
-      "size": [20, 22, 24, 26, 28, 30, 32, 34, 36, 38],
+      "size": [
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38
+      ],
       "lengthFlag": true,
-      "length": [12, 14, 16, 18, 20, 22, 24],
+      "length": [
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24
+      ],
       "description": [
         "Made from cotton-Lycra.",
         "Elasticated waist .",
@@ -340,7 +504,7 @@
       "City": "Coibtote",
       "State": "audi",
       "GSTNum": "54546464",
-      "isActive": false,
+      "isActive": true,
       "id": 2
     }
   ]

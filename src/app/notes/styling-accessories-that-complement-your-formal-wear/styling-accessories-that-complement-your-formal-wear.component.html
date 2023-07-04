@@ -1,87 +1,77 @@
-<ng-container let>
+<ng-container *ngFor="let x of cards">
 <div class="container">
     <div class="row">
         <div class="col text-center  text-black fw-lighter p-4">
-            <h1 class="text-danger">{{id}}</h1>
-            <h4></h4>
-            <h1></h1>
+            <h4>{{x.mh1}}</h4>
+            <h1>{{x.name}}</h1>
             <div class="row text-center  ">
-                <div class="col-8">
-                    <b></b>
+                <div class="col">
+                    <b>{{x.mp1}}</b>
                 </div>
             </div>
         </div>
         <div style="font-size: 14px;">
-            <b class="text-start"></b>
+            <b class="text-start">{{x.h3}}</b>
             <ul>
                 <br>
                 <li>
-                    <b></b> 
+                    <b>{{x.sh1}}</b>{{x.sp1}} 
                 </li>
                 <br>
                 <li>
-                    <b> </b> 
+                    <b>{{x.sh2}}</b>{{x.sp2}} 
                 </li>
                 <br>
                 <li>
-                    <b></b> 
+                    <b>{{x.sh3}}</b>{{x.sp3}} 
                 </li>
                 <br>
                 <li>
-                    <b>  </b>
+                    <b>{{x.sh4}}</b>{{x.sp4}} 
                 </li>
                 <br>
                 <li>
-                    <b>  </b>
+                    <b>{{x.sh5}}</b>{{x.sp5}} 
                 </li>
                 <br>
                 <li>
-                    <b> </b>
+                    <b>{{x.sh6}}</b>{{x.sp6}} 
                 </li>
             </ul>
         </div>
 
         <div style="font-size: 14px;">
-            <b class="text-start">Accessories For Women - Tips:
-
+            <b class="text-start">
+{{x.h4}}
             </b>
             <ul>
                 <br>
                 <li>
-                    Scarves - If you’re feeling chilly or if the weather allows for it, it’s always good to wear a
-                    professional-looking scarf with a suit. Just keep in mind that the scarves you choose should be
-                    accessory ones, and not winter scarves.
+                   <b>{{x.sh7}}</b>{{x.sp7}}
                 </li>
                 <br>
                 <li>
-                    Belt - A thin belt accentuates any woman’s figure, so it’s essential for you to choose a slim one
-                    that is in a contrast colour from your outfit. The belt and shoe rule that is a must for men doesn’t
-                    usually apply for women, though.
+                     <b>{{x.sh8}}</b>{{x.sp8}}
                 </li>
                 <br>
                 <li>
-                    Jewellery - If you’re heading for any formal event, avoid wearing large costume jewellery. Earrings
-                    should be conservative and small. Necklaces are acceptable, as long as they are delicate or are
-                    pendants. An elegant watch is a must
+                    <b>{{x.sh9}}</b>{{x.sp9}}
                 </li>
                 <br>
                 <li>
-                    Purse/Handbag - Always opt for a classy leather bag that can fit all your essentials like your
-                    laptop. This adds a touch of professionalism to your look.
+                     <b>{{x.sh10}}</b>{{x.sp10}}
                 </li>
                 <br>
                 <li>
-                    Hosiery - If you’re wearing hosiery, it should always suit your skin tone, and should not have any
-                    distracting patterns or designs.
+                    <b>{{x.sh11}}</b>{{x.sp11}}
                 </li>
             </ul>
         </div>
         
-        <b>Conclusion</b>
+        <b> {{x.conclusion}} </b>
     
-        For both men and women, getting your accessories right is an integral part of nailing the formal look. However,
-        unless the base is right, the impact you create won’t be an effective one - start by finding customised workwear
-        that complements your frame to a tee at Acecraft!
+        {{x.conclusioncontent}}
+        
    
     </div>
 </div>

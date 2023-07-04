@@ -13,12 +13,14 @@ import { ServiceService } from 'src/Services/service.service';
 export class StylingAccessoriesThatComplementYourFormalWearComponent implements OnInit {
   cards:any[]=[];
    cardid!:number
-  id!: string | null;
-   constructor(private route:ActivatedRoute,private serve:ServiceService){}
+  id!: number|any;
+   constructor(private route:ActivatedRoute,private serve:ServiceService){
+    
+   }
   
   ngOnInit(): void {
     this.id=this.route.snapshot.paramMap.get('id');
-    this.serve.getCards().subscribe((res)=>this.cards=res)
+    this.serve.getNotesById(this.id).subscribe((res)=>this.cards=res)
   
  }
 }

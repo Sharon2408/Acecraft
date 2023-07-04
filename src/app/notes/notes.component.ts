@@ -20,12 +20,12 @@ export class NotesComponent implements OnInit {
       }
     )
   }
-    notesId!: number;
+
 
 // When clicked Id will get passed in the bekow function
 
 viewProduct(id: number) {
-  this.notesId = id;
+
   this.router.navigate(['notessub1/' + id]);
 }
 }
