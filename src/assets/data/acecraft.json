@@ -504,8 +504,23 @@
       "City": "Coibtote",
       "State": "audi",
       "GSTNum": "54546464",
-      "isActive": true,
+      "isActive": false,
       "id": 2
+    },
+    {
+      "firstname": "Varma",
+      "lastname": "d",
+      "password": "Varma@123",
+      "confirm_password": "Varma@123",
+      "email": "varma@123",
+      "Radiobtn": "school",
+      "Dealership": "jhgfmgj",
+      "DealershipNum": "12548568",
+      "City": "Coimbatore",
+      "State": "volvo",
+      "GSTNum": "254548",
+      "isActive": false,
+      "id": 3
     }
   ]
 }
