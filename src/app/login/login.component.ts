@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -13,6 +13,9 @@ import { MessageService } from 'primeng/api';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
+
+
+
 export class LoginComponent implements OnInit {
   constructor(
     private regservice: RegisterService,
@@ -41,9 +44,11 @@ export class LoginComponent implements OnInit {
         }
         return false;
       });
+
       if (user) {
         console.log(this.userdata.id);
         this.myForm1.reset();
+        this.regservice.authsubject.next(true);
         localStorage.setItem('token', Math.random().toString())
         this.router.navigate(['', '/']);
         this.alert.add({

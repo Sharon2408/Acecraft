@@ -47,7 +47,7 @@ const routes: Routes = [
   },
   {
     path: 'cart',
-    component: CartComponent,
+    component: CartComponent,canActivate:[authGuard]
   },
   {
     path: 'note-card1',

@@ -519,7 +519,7 @@
       "City": "Coimbatore",
       "State": "volvo",
       "GSTNum": "254548",
-      "isActive": false,
+      "isActive": true,
       "id": 3
     }
   ]

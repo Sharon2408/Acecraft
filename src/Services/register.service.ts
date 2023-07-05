@@ -15,9 +15,6 @@ export class RegisterService {
 
   public authsubject = new Subject<boolean>;
 
-  validateUser(data:boolean){
-    this.authsubject.next(data)
-  }
   registerurl='http://localhost:3000/register'
 
 

@@ -1,4 +1,4 @@
-<p-toast position="top-center" key="tc"></p-toast>
+<p-toast position="top-center" key="tc" [showTransformOptions]="'translateY(100%)'" [showTransitionOptions]="'500ms'" [hideTransitionOptions]="'500ms'" [showTransformOptions]="'translateX(100%)'"></p-toast>
 <nav class="navbar navbar-expand-lg sticky-top bg-black">
   <div class="flex justify-content-center">
     <span (click)="sidebarVisible = true" class="d-lg-none" id="toggle"
@@ -20,17 +20,18 @@
       </div>
     </div>
   </div>
+
   <div class="d-flex" style="margin-top: 4%">
     <li class="nav-item d-md-none d-lg-block d-sm-none d-none">
       <div id="setting">
         <a class="nav-link"  aria-disabled="true"><i class="pi pi-cog" style="font-size: 1.5rem"></i></a>
         <ul id="list" class="text-end fs-4">
-          <ng-container *ngFor="let user of user">
-          <li (click)="onSelect(user)">
-           {{user.id}}|<i [class]="user.icon"></i>
-          </li>
-          <br>
-        </ng-container>
+        <li routerLink="/login" *ngIf="!logged">
+          Login <i class="ms-3 fas fa-sign-in"></i>
+        </li>
+        <li routerLink="register" *ngIf="!logged">
+          Register <i class="ms-3 fas fa-user-plus"></i>
+        </li>
           <li>
             Order Status
           </li>
@@ -39,7 +40,7 @@
             Contact
           </li>
           <br>
-          <li (click)="logout()">
+          <li *ngIf="logged" (click)="logout()">
             Logout
           </li>
         </ul>
