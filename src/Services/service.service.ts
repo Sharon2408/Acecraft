@@ -9,12 +9,12 @@ import { Footer } from 'primeng/api';
 export class ServiceService {
   constructor(private http: HttpClient) {}
 
-  cardurl: string = 'http://localhost:3000/cards';
-  navitems: string = 'http://localhost:3000/navbar-items';
-  footer: string = ' http://localhost:3000/footer';
-  icon: string = 'http://localhost:3000/footericons';
-  enterprise: string = 'http://localhost:3000/enterpriseimages';
-  products: string = 'http://localhost:3000/Products';
+  cardurl: string = 'https://acecraft-db.onrender.com/cards';
+  navitems: string = 'https://acecraft-db.onrender.com/navbar-items';
+  footer: string = ' https://acecraft-db.onrender.com/footer';
+  icon: string = 'https://acecraft-db.onrender.com/footericons';
+  enterprise: string = 'https://acecraft-db.onrender.com/enterpriseimages';
+  products: string = 'https://acecraft-db.onrender.com/Products';
 
   getCards() {
     return this.http.get<Models[]>(this.cardurl);

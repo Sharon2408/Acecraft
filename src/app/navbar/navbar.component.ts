@@ -76,12 +76,11 @@ logout(){
     this.userdata = res;
     this.logged=false;
     this.regservice.authsubject.next(false);
-    this.ngOnInit()
-    this.alert.add({ severity: 'info', summary: 'Sticky', detail: 'Message Content', sticky: true });
     const confirmation=confirm("You will be Logged out!!")
      this.userdata.find((a: any) => {
       if (confirmation && a.isActive==true) {
         localStorage.removeItem('token')
+        window.location.reload();
         this.logged=true
         this.regservice.isDeactive(a, a.id);
         this.alert.add({

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Register } from 'src/Models/register';
 import { authGuard } from 'src/app/auth.guard';
-import { Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -15,7 +15,7 @@ export class RegisterService {
 
   public authsubject = new Subject<boolean>;
 
-  registerurl='http://localhost:3000/register'
+  registerurl='https://acecraft-db.onrender.com/register'
 
 
 
