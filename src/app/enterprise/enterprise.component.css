@@ -1,3 +1,4 @@
+/* 1st Background Image */
 .bg1 {
   background-size: cover;
   background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-1.jpg);
@@ -7,51 +8,7 @@
   background-repeat: no-repeat;
 }
 
-/* .bg2 {
-  background-size: cover;
-  background-image: url("/assets/images/enterprise-2.png");
-  background-position: center;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  z-index: 0;
-}
-.bg3 {
-  background-size: cover;
-  background-image: url("/assets/images/enterprise-3.png");
-  background-position: center;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  z-index: 0;
-} */
-
-
-#btmimg{
-z-index: 0;
-}
-#btmtext{
-z-index: 1;
-position: absolute;
-top: 42%;
-left: 38%;
-border-radius: 5px;
-background-color: rgb(0, 0, 0);
-width: 20%;
-color: gray ;
-padding: 20px;
-}
-
-#bottombtn{
-  color: white;
-  border: 1px solid white;
-  width: 50%;
-  margin-left: 25%;
-  padding: 6px;
-}
-
-#bottombtn:hover{
-  border: none;
-}
-
+/* Cards */
 .img1 {
   background-image: url("/assets/images/Enterprises-2.png");
   background-size: 180%;
@@ -82,6 +39,7 @@ padding: 20px;
   transform: scale(0.9);
 }
 
+/* This is how we do */
 .img4 {
   margin-left: 4.2em;
 }
@@ -111,10 +69,34 @@ padding: 20px;
   margin-left: 4em;
 }
 
+/* Bottom image and texts and buttons */
+#btmimg {
+  z-index: 0;
+}
+#btmtext {
+  z-index: 1;
+  position: absolute;
+  top: 42%;
+  left: 38%;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  width: 20%;
+  color: gray;
+  padding: 20px;
+}
+
+#bottombtn {
+  color: white;
+  border: 1px solid white;
+  width: 50%;
+  margin-left: 25%;
+  padding: 6px;
+}
+
+#bottombtn:hover {
+  border: none;
+}
 .touch {
   border-radius: 5px;
   background-color: rgb(0, 0, 0);
-}
-
-@media (min-width=500px) {
 }

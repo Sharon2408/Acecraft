@@ -1,21 +1,28 @@
 <div class="container">
+  
+  <!-- Primeng Toast -->
+
   <p-toast position="top-center" key="tc"></p-toast>
+  
   <div class="row">
+    <!-- Message to Display while the Cart is Empty -->
     <div  style="height: 361px;" *ngIf="cartcount<1" >
       <ng-container>
       <h4 class="pt-5" >Your Shopping cart is Empty!</h4>
       <h5 class="pt-3" > <a routerLink="" class="btn btn-outline-dark">Continue shopping</a></h5>
     </ng-container>
     </div>
+    <!-- While the Cart object is greater than Zero To display cart items -->
     <div *ngIf="cartcount>0" >
     <h2  class="text-center pt-5 pb-5 fw-lighter" >
       Your bag total is {{ totalPrice(cart) | currency : "INR" : "symbol" }}
     </h2>
    
+    <!-- To loop through the cart object and display products -->
     <ng-container *ngFor="let x of cart">
       <hr />
     <div class="col d-flex justify-content-evenly">
-     
+     <!-- Product Images -->
       <img
         src="{{x.img}}"
         alt=""
@@ -24,13 +31,16 @@
       />
       <h3 class="ms-5">{{x.title}} <br> size:{{x.size}}</h3>
      
+      <!-- To increase and decrease quantity in the cart component -->
       <span>
-        <i (click)="decproduct(x)" class="fa-solid fa-minus fa-sm"></i>
+        <i (click)="decrease_product(x)" class="fa-solid fa-minus fa-sm"></i>
         <input readonly type="text" class="text-center" value="{{x.quantity}}" style="width: 40px;">
-        <i (click)=" showMyProduct(x)" class="fa-solid fa-plus fa-sm"></i>
+        <i (click)="increase_product(x)" class="fa-solid fa-plus fa-sm"></i>
     </span>
+    <!-- To Remove item in a cart  -->
      <h4  class="ms-5">{{ x.price | currency : "INR" : "symbol" }} <br> <h6><a  style="color: red;" (click)="delete(x)">Remove</a></h6></h4>
      <br>
+     <!-- To show the total Price in the cart -->
      <h6>Total Price: {{ x.price*x.quantity | currency : "INR" : "symbol" }}  </h6>
     </div>
 
@@ -50,6 +60,7 @@
       <h5 class="text-secondary">Subtotal</h5>
       <h2 class="pt-3">Total</h2>
     </div>
+    <!-- Total Price in the Footer of the cart -->
     <div class="col-4" >
       <h5 class="text-end text-secondary">{{ totalPrice(cart) | currency : "INR" : "symbol" }}</h5>
       <h2 class="text-end pt-3 ">{{ totalPrice(cart) | currency : "INR" : "symbol" }}</h2>

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./college.component.css']
 })
 export class CollegeComponent {
-
+// Images
 icon1='/assets/images/icon_1.jpg'
 icon2='/assets/images/icon_2.png'
 icon3='/assets/images/icon_3.png'

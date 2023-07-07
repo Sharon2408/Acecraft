@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Models, Navitems, icons, enterpriseimages,Products } from 'src/Models/models';
+import { Models, Navitems, icons, enterpriseimages,Products, timeline } from 'src/Models/models';
 import { Footer } from 'primeng/api';
 
 @Injectable({
@@ -15,6 +15,7 @@ export class ServiceService {
   icon: string = 'https://acecraft-db.onrender.com/footericons';
   enterprise: string = 'https://acecraft-db.onrender.com/enterpriseimages';
   products: string = 'https://acecraft-db.onrender.com/Products';
+  timeline:string = 'https://acecraft-db.onrender.com/timeline'
 
   getCards() {
     return this.http.get<Models[]>(this.cardurl);
@@ -34,6 +35,10 @@ export class ServiceService {
 
   getEnterpriseimages(){
     return this.http.get<enterpriseimages[]>(this.enterprise)
+  }
+
+  getTimeline(){
+    return this.http.get<timeline[]>(this.timeline)
   }
 
   getProducts(){

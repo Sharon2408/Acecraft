@@ -13,6 +13,8 @@ bottomimage1='/assets/images/enterprise-2.png'
 bottomimage2='/assets/images/enterprise-3.png'
 
   enterpriseimages: any[] = [];
+  timeline1:any[]=[];
+  
   timeline: any[] = [
     {
       icon: 'fa-light fa-1 fa-xl',

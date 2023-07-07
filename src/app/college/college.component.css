@@ -3,9 +3,7 @@ body {
     padding: 0%;
 }
 
-/* =================
-    BANNER
-   =================*/
+/* BANNER*/
 
 .banner {
     background-image: url(/assets/images/banner.jpg);
@@ -33,9 +31,7 @@ body {
     font-weight: 700;
 }
 
-/* ================
-    MAIN CONTENT
-   ================ */
+/*   MAIN CONTENT */
 
 .main-content {
     background-color: #b2b3b5;
@@ -64,9 +60,7 @@ body {
     margin-right: 4em;
 }
 
-/* ================
-   BANNER-2
-   ================*/
+/* BANNER-2*/
 #banner-2 {
     background-image: url(/assets/images/banner_2.jpg);
     background-position: center;
@@ -89,9 +83,7 @@ body {
     font-size: 35px;
 }
 
-/* =================
-   CAROUSEL
-   ================= */
+/*CAROUSEL */
 
 .carousel {
     background-color: black;
@@ -119,9 +111,7 @@ body {
     width: 85%;
 }
 
-/* =================
-    BANNER-3
-   =================*/
+/* BANNER-3 */
 
 .banner-3 {
     background-image: url(/assets/images/banner_3.jpg);
@@ -165,9 +155,7 @@ em {
 }
 
 
-/* ====================
-    MEDIA 500PX 
-=======================*/
+/* MEDIA 500PX */
 @media (max-width:500px) {
     #row2 b {
         margin: 0%;

@@ -26,6 +26,15 @@ export interface enterpriseimages {
     text1class:string;
     text2class:string
 }
+
+export interface timeline {
+    icon:string;
+    image:string;
+    className:string;
+    title1:string;
+    title2:string;
+}
+
 export interface Products {
     title: string;
     productCode: string;

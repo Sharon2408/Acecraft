@@ -1,8 +1,10 @@
+/* Hero Image */
 .banner {
     position: relative;
     overflow-x: hidden;
 }
 
+/* To make th image responsive */
 .img-responsive {
     display: block;
     width: 100%;
@@ -11,6 +13,7 @@
     z-index: 0;
 }
 
+/* Text on Hero image inside Box*/
 .text {
     
  
@@ -23,6 +26,7 @@
     
 }
 
+/* College text on Hero image */
 .college{
     position:absolute;
     text-decoration: none;
@@ -32,6 +36,8 @@
     margin-top: 40%;
    
 }
+
+/* Card text School and Enterprise */
 
 .card1-text{
     position: absolute;
@@ -43,6 +49,7 @@
     
 }
 
+/* Box on the card */
 .homecard{
     position: absolute;
     margin-top: 15%;
