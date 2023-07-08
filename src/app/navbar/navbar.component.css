@@ -21,7 +21,7 @@ a:hover {
     color: rgb(255, 255, 255);
     font-size: 30px;
     margin: 0%;
-
+   
 }
 
 #navbarNav{
@@ -63,7 +63,7 @@ display:block;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(4, 1, 49) 100%);
     color: #aca8a8;
     height: 100vh;
-    left: 81.4%;
+    left: 83.5%;
     width: 250px;
 }
 
@@ -74,4 +74,17 @@ display:block;
 
 #list li:hover {
     color: white;
+}
+@media (max-width: 576px)  { 
+
+    #icon{
+        position: absolute;
+        margin-left: 280px;
+        margin-bottom: 50px;
+    }
+    #ace{
+       text-align: center;
+       font-size: x-large; 
+    
+    }
 }

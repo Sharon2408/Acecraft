@@ -4,7 +4,7 @@ import { ServiceService } from 'src/Services/service.service';
 import { CartService } from 'src/Services/cart.service';
 import { MessageService } from 'primeng/api';
 import { RegisterService } from 'src/Services/register.service';
-import { authGuard } from '../auth.guard';
+import { authGuard } from '../../Gaurds/auth.guard';
 import { RouterModule, Routes } from '@angular/router';
 import { state } from '@angular/animations';
 

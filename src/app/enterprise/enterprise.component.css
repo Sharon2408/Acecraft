@@ -39,35 +39,10 @@
   transform: scale(0.9);
 }
 
-/* This is how we do */
-.img4 {
-  margin-left: 4.2em;
-}
+/* This is how we do (styles.css) */
 
-.img5 {
-  margin-left: 7em;
-}
 
-.img6 {
-  margin-left: 7em;
-}
 
-.img7 {
-  margin-left: 7em;
-}
-
-.img8 {
-  margin-left: 7em;
-}
-
-.img9 {
-  margin-left: 7em;
-}
-
-#row {
-  width: 90%;
-  margin-left: 4em;
-}
 
 /* Bottom image and texts and buttons */
 #btmimg {

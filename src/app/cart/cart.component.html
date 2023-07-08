@@ -6,10 +6,10 @@
   
   <div class="row">
     <!-- Message to Display while the Cart is Empty -->
-    <div  style="height: 361px;" *ngIf="cartcount<1" >
+    <div  style="height: 561px;" *ngIf="cartcount<1" >
       <ng-container>
       <h4 class="pt-5" >Your Shopping cart is Empty!</h4>
-      <h5 class="pt-3" > <a routerLink="" class="btn btn-outline-dark">Continue shopping</a></h5>
+      <h5 class="pt-3" > <a routerLink="/school" class="btn btn-outline-dark">Continue shopping</a></h5>
     </ng-container>
     </div>
     <!-- While the Cart object is greater than Zero To display cart items -->
@@ -33,12 +33,12 @@
      
       <!-- To increase and decrease quantity in the cart component -->
       <span>
-        <i (click)="decrease_product(x)" class="fa-solid fa-minus fa-sm"></i>
+        <i  (click)="decrease_product(x)" class="fa-solid fa-minus fa-md"></i>
         <input readonly type="text" class="text-center" value="{{x.quantity}}" style="width: 40px;">
-        <i (click)="increase_product(x)" class="fa-solid fa-plus fa-sm"></i>
+        <i  (click)="increase_product(x)"  class="fa-solid fa-plus fa-md"></i>
     </span>
     <!-- To Remove item in a cart  -->
-     <h4  class="ms-5">{{ x.price | currency : "INR" : "symbol" }} <br> <h6><a  style="color: red;" (click)="delete(x)">Remove</a></h6></h4>
+     <h4  class="ms-5">{{ x.price | currency : "INR" : "symbol" }} <br> <h6><a  style="color: red;" routerLink="." (click)="delete(x)">Remove</a></h6></h4>
      <br>
      <!-- To show the total Price in the cart -->
      <h6>Total Price: {{ x.price*x.quantity | currency : "INR" : "symbol" }}  </h6>
@@ -54,7 +54,7 @@
     <div class="col-5">
       <h4 class="fw-lighter">Enter Coupon code here</h4>
       <input type="text" style="height: 39px; width: 300px;">
-      <button class=" btn-outline-dark">Apply!</button>
+      <button routerLink="." class=" btn-outline-dark">Apply!</button>
     </div>
     <div class="col-3">
       <h5 class="text-secondary">Subtotal</h5>
@@ -66,7 +66,7 @@
       <h2 class="text-end pt-3 ">{{ totalPrice(cart) | currency : "INR" : "symbol" }}</h2>
       <br>
       <span class=" " > <a routerLink="/school" class=" btn-outline-dark">Continue shopping</a></span>
-      <span class=" ms-3" > <a  class=" btn-outline-dark">Place Order</a></span> 
+      <span class=" ms-3" > <a routerLink="." (click)="makePayment(totalPrice(cart))"  class=" btn-outline-dark">Place Order</a></span> 
     </div>
   </div>
 </div>

@@ -12,7 +12,7 @@
       <div class="col-6">
         <div>
           <h1>{{ item.title }}</h1>
-          <p>Product Code:{{ item.productCode | sortprod}}</p>
+          <p>Product Code:{{ item.productCode}}</p>
           <p>Brand: {{ item.brand }}</p>
           <p>Sold By: {{ item.soldBy }}</p>
           <span class="price">
@@ -108,8 +108,8 @@
             </div>
             <br />
             <div class="button">
-              <button class="btn btn-dark m-3" (click)=" addToCart(item)">Add to Cart</button>
-              <button class="btn btn-dark m-0" routerLink="/cart" (click)=" addToCart(item)">Buy Now</button>
+              <button class="btn btn-outline-dark m-3" routerLink="/" (click)=" addToCart(item)">Add to Cart</button>
+              <button class="btn btn-outline-dark m-0" routerLink="/cart" (click)=" addToCart(item)">Buy Now</button>
             </div>
           </div>
         </div>

@@ -21,26 +21,32 @@ school=[
   },
   {
     img:'http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/rvschool.png',
+    routerLink:'/products',
     text1:'rv'
   },
   {
     img:'http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/sophias.jpg',
+    routerLink:'/products',
     text1:'sophia'
   },
   {
     img:'http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/kumarans.png',
+    routerLink:'/products',
     text1:'kumarans'
   },
   {
     img:'https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Logo-%20New%20Horizon%20Gurukul.jpg',
+    routerLink:'/products',
     text1:'new horizon gurukul'
   },
   {
     img:'https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/cgis.png',
+    routerLink:'/products',
     text1:'cisb'
   },
   {
     img:'https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/NHIS%20LOGO%20Jpeg.jpg',
+    routerLink:'/products',
     text1:'nhis'
   }
 ]

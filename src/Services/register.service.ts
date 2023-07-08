@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Register } from 'src/Models/register';
-import { authGuard } from 'src/app/auth.guard';
+import { authGuard } from 'src/Gaurds/auth.guard';
 import { BehaviorSubject, Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'

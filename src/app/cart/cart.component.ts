@@ -72,6 +72,37 @@ export class CartComponent implements OnInit {
   // To keep the count of the cart
   cartcount = 0;
  
+  invokeStripe() {
+    if (!window.document.getElementById('stripe-script')) {
+      const script = window.document.createElement('script');
+      script.id = 'stripe-script';
+      script.type = 'text/javascript';
+      script.src = 'https://checkout.stripe.com/checkout.js';
+      script.onload = () => {
+        this.paymentHandler = (<any>window).StripeCheckout.configure({
+          key: 'pk_test_51Kb7TuSGj6LZeNumr4WWZQlyT0VAdXUwQ0zPIJAmGbnt9MAwXkJ5aIfQOZsCPraDu1L2BxAyRb8jLSF5tB6fL8mO00Yw0HiRYf',
+          locale: 'auto',
+          token: function (stripeToken: any) {
+            console.log(stripeToken);
+            const Toast = Swal.mixin({
+              toast: true,
+              position: 'top',
+              showConfirmButton: false,
+              timer: 3000,
+              timerProgressBar: true,
+            });
+
+            Toast.fire({
+              icon: 'error',
+              title: 'Error in generating Stripe Payment Gateway',
+            });
+          },
+        });
+      };
+      window.document.body.appendChild(script);
+    }
+  }
+
   ngOnInit(): void {
     // To get the items in the Cart Method invoked from cart Service 
     this.cartSvc.getCartItems().subscribe((response) => {
@@ -79,6 +110,7 @@ export class CartComponent implements OnInit {
       this.cartcount = response.length;
       console.log(this.cart);
     });
+    this.invokeStripe();
   }
 
   // Quantity increase product functionality
@@ -109,4 +141,43 @@ export class CartComponent implements OnInit {
       this.cartSvc.updateCart(product);
     }
   }
+
+
+
+  paymentHandler: any = null;
+
+  //When testing interactively, use a card number, such as 4242 4242 4242 4242.
+  //Enter the card number in the Dashboard or in any payment form.
+  //se a valid future date, such as 12/34.
+  //Use any three-digit CVC (four digits for American Express cards).
+  makePayment(amount: any) {
+    //makePayment() {
+    const paymentHandler = (<any>window).StripeCheckout.configure({
+      key: 'pk_test_51NPhAIDBuqf3gYxJaVuM2k513NFWYSUuvSK29hPVgHKx92rd2dBhz5xEc5qABUMoi12szZZ7Ik3nI7gU21hXkffC00vHQmnBMf',
+      locale: 'auto',
+      token: function (stripeToken: any) {
+        console.log(stripeToken);
+        //alert('Stripe token generated!');
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+        });
+
+        Toast.fire({
+          icon: 'success',
+          title: 'Order Placed Successfully',
+        });
+      },
+    });
+    paymentHandler.open({
+      name: 'Course',
+      description: 'Order Details',
+      amount: amount,
+    });
+  }
+
+ 
 }

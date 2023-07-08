@@ -14,7 +14,7 @@ import { SchoolViewProductsComponent } from './products/school-view-products/sch
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { authGuard } from './auth.guard';
+import { authGuard } from '../Gaurds/auth.guard';
 
 const routes: Routes = [
   {

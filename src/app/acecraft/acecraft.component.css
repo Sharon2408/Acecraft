@@ -19,7 +19,7 @@
  
     position: absolute;
     margin-top: -225px;
-    margin-left: 500px ;
+    margin-left: 580px ;
     color: grey;
     border: 1px solid rgb(255, 255, 255);
     font-size: 47px;
@@ -57,4 +57,18 @@
     text-decoration: none;
     color: white;
    font-weight: bolder;
+}
+
+@media (max-width: 576px)  {
+
+    .card1-text{
+        display: none;
+    }
+
+    .college{
+        position: absolute;
+        margin-left: 80px;
+        
+    }
+   
 }
