@@ -25,7 +25,6 @@ export class LoginComponent implements OnInit {
 
   userdata: any;
   myForm1!: FormGroup;
-  //username: FormControl | any;
   email: FormControl | any;
   password: FormControl | any;
 
@@ -50,7 +49,7 @@ export class LoginComponent implements OnInit {
         this.myForm1.reset();
         this.regservice.authsubject.next(true);
         localStorage.setItem('token', Math.random().toString())
-        this.router.navigate(['', '/']);
+        this.router.navigate(['']);
         this.alert.add({
           key: 'tc',
           severity: 'success',
@@ -67,24 +66,19 @@ export class LoginComponent implements OnInit {
         this.myForm1.reset();
       }
     });
-    // return this.regservice.login(form.value.email).subscribe((res) => {
-    //   this.userdata = res;
-    //   console.log(this.userdata);
-
-    // });
   }
 
   ngOnInit(): void {
     this.password = new FormControl('', [
       Validators.required,
-      Validators.pattern(
-        '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-zd$@$!%*?&].{8,}$'
-      ),
+      Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-zd$@$!%*?&].{8,}$'),
     ]);
     this.email = new FormControl('', [Validators.required, Validators.email]);
+    
     this.myForm1 = new FormGroup({
       password: this.password,
       email: this.email,
     });
+    
   }
 }

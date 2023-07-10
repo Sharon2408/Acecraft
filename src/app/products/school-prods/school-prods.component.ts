@@ -18,7 +18,7 @@ ngOnInit():void {}
 
 productId!: number;
 
-// When clicked Id will get passed in the bekow function
+// When clicked Id will get passed in the below function
 
 viewProduct(id: number) {
   this.productId = id;

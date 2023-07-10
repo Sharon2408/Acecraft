@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { cart } from 'src/Models/cart';
 import { Subject } from 'rxjs'; 
+import { environment } from 'src/Environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-  carturl = 'https://acecraft-db.onrender.com/cart';
+  carturl = environment.carturl;
 
   constructor(private http:HttpClient) { }
 

@@ -17,7 +17,6 @@ import { NotesComponent } from './notes/notes.component';
 import { AirenComponent } from './airen/airen.component';
 import { CartComponent } from './cart/cart.component';
 import { CardModule } from 'primeng/card';
-import { NoteCard1Component } from './note-card1/note-card1.component';
 import { StylingAccessoriesThatComplementYourFormalWearComponent } from './notes/styling-accessories-that-complement-your-formal-wear/styling-accessories-that-complement-your-formal-wear.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
@@ -29,10 +28,8 @@ import { ButtonModule } from 'primeng/button';
 import { AnimateModule } from 'primeng/animate';
 import { TimelineModule } from 'primeng/timeline';
 import { StepsModule } from 'primeng/steps';
-import { ModalComponent } from './modal/modal.component';
 import { DialogModule } from 'primeng/dialog';
 import { HondaComponent } from './honda/honda.component';
-import { ViewSchoolProductsComponent } from './school/view-school-products/view-school-products.component';
 import { ProductsComponent } from './products/products.component';
 import { SchoolProdsComponent } from './products/school-prods/school-prods.component';
 import { SchoolViewProductsComponent } from './products/school-view-products/school-view-products.component';
@@ -41,7 +38,6 @@ import { ProductsortPipe } from 'src/shared/productsort.pipe';
 import { QuantityComponent } from './quantity/quantity.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-import { UserComponent } from './user/user.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { authGuard } from '../Gaurds/auth.guard';
@@ -61,12 +57,9 @@ import { authGuard } from '../Gaurds/auth.guard';
     NotesComponent,
     AirenComponent,
     CartComponent,
-    NoteCard1Component,
     StylingAccessoriesThatComplementYourFormalWearComponent,
     FeedbackFormComponent,
-    ModalComponent,
     HondaComponent,
-    ViewSchoolProductsComponent,
     ProductsComponent,
     SchoolProdsComponent,
     SchoolViewProductsComponent,
@@ -75,10 +68,6 @@ import { authGuard } from '../Gaurds/auth.guard';
     QuantityComponent,
     RegisterComponent,
     LoginComponent,
-    UserComponent,
-
-    
-
   ],
   imports: [
     BrowserModule,

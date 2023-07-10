@@ -17,12 +17,8 @@ import { MessageService } from 'primeng/api';
 })
 
 export class CartComponent implements OnInit {
-  constructor(
-    private cartSvc: CartService,
-    private router: Router,
-    private alert: MessageService
-  ) {}
-
+  constructor( private cartSvc: CartService, private alert: MessageService) {}
+ 
   // To include the necessary details of the product in the cart
   carts: cart = {
     id: 0,
@@ -33,6 +29,7 @@ export class CartComponent implements OnInit {
     quantity: 1,
     totalPrice: 1,
   };
+
 // Initializing the values
   cartData: any = [];
   totalprice: number = 0;
@@ -41,7 +38,8 @@ export class CartComponent implements OnInit {
 
 
   // To show the total Price in the cart
-  totalPrice(data: any) {
+  totalPrice(data: any) 
+  {
     const intialValue = 0;
     this.cartData = data;
     const a = this.cartData.reduce(
@@ -56,8 +54,6 @@ export class CartComponent implements OnInit {
   delete(deleteItem: cart) {
     // Cart Service
     this.cartSvc.removeItemFromCart(deleteItem).subscribe(() => console.log(deleteItem.title));
-    
-    // Prime NG toast
     this.alert.add({
       key: 'tc',
       severity: 'error',
@@ -103,15 +99,7 @@ export class CartComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
-    // To get the items in the Cart Method invoked from cart Service 
-    this.cartSvc.getCartItems().subscribe((response) => {
-      this.cart = response;
-      this.cartcount = response.length;
-      console.log(this.cart);
-    });
-    this.invokeStripe();
-  }
+
 
   // Quantity increase product functionality
   increase_product(quantity: cart) {
@@ -130,7 +118,6 @@ export class CartComponent implements OnInit {
     }
   }
 
-
   // Quantity decrease product functionality
   decrease_product(product: cart) {
 
@@ -143,15 +130,8 @@ export class CartComponent implements OnInit {
   }
 
 
-
   paymentHandler: any = null;
-
-  //When testing interactively, use a card number, such as 4242 4242 4242 4242.
-  //Enter the card number in the Dashboard or in any payment form.
-  //se a valid future date, such as 12/34.
-  //Use any three-digit CVC (four digits for American Express cards).
   makePayment(amount: any) {
-    //makePayment() {
     const paymentHandler = (<any>window).StripeCheckout.configure({
       key: 'pk_test_51NPhAIDBuqf3gYxJaVuM2k513NFWYSUuvSK29hPVgHKx92rd2dBhz5xEc5qABUMoi12szZZ7Ik3nI7gU21hXkffC00vHQmnBMf',
       locale: 'auto',
@@ -179,5 +159,13 @@ export class CartComponent implements OnInit {
     });
   }
 
- 
+  ngOnInit(): void {
+    // To get the items in the Cart Method invoked from cart Service 
+    this.cartSvc.getCartItems().subscribe((response) => {
+      this.cart = response;
+      this.cartcount = response.length;
+      console.log(this.cart);
+    });
+    this.invokeStripe();
+  }
 }

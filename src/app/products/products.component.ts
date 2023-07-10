@@ -28,7 +28,6 @@ count=0
 
 
   optionSelected: any;
-
   sortParam: any;
   sortDirection: any;
 
