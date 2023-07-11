@@ -21,44 +21,24 @@ export class NavbarComponent implements OnInit {
     private cart1: CartService,
     private alert: MessageService
   ) {}
+
+  // Badge Count
   val: number = 0;
+
+  // Navbar and Footer items
   nav: any[] = [];
   foot: any[] = [];
   footicon: any[] = [];
+
+  // To hide the login in navbar
   logged: any;
 
-
-
-  ngOnInit(): void {
-    // console.log(this.routes.keys)
-
-    this.navcontent.getNavitems().subscribe((res) => (this.nav = res));
-    this.footcontent.getFooter().subscribe((res) => (this.foot = res));
-    this.footicon1.getIcons().subscribe((res) => (this.footicon = res));
-    this.cart1.getCartItems().subscribe((res) => {
-      this.val = res.length;
-      console.log(this.val);
-    });
-    this.cart1.countSubject.subscribe((res) => {
-      this.val = res;
-      console.log(this.val);
-    });
-
-    this.regservice.authsubject.subscribe((res) => {
-      this.logged = res;
-      console.log(res);
-    });
-    //console.log(this.logged)
-  }
-
+  // Sidebar for mobile view
   sidebarVisible: boolean = false;
   sidebarVisible2: boolean = false;
 
+  // Logout functionality
   userdata: any;
-  showSticky() {}
-  onConfirm() {}
-  onReject() {}
-
   logout() {
     this.regservice.getCred().subscribe((res) => {
       this.userdata = res;
@@ -83,4 +63,25 @@ export class NavbarComponent implements OnInit {
       });
     });
   }
+
+  ngOnInit(): void {
+    this.navcontent.getNavitems().subscribe((res) => (this.nav = res));
+    this.footcontent.getFooter().subscribe((res) => (this.foot = res));
+    this.footicon1.getIcons().subscribe((res) => (this.footicon = res));
+    this.cart1.getCartItems().subscribe((res) => {
+      this.val = res.length;
+      console.log(this.val);
+    });
+
+    this.cart1.countSubject.subscribe((res) => {
+      this.val = res;
+      console.log(this.val);
+    });
+
+    this.regservice.authsubject.subscribe((res) => {
+      this.logged = res;
+      console.log(res);
+    });
+  }
+
 }

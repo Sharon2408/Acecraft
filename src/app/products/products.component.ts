@@ -20,7 +20,7 @@ count=0
         this.count++;
        
       }
-      console.log(this.count)})
+      })
     
     
   }

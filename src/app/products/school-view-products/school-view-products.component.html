@@ -99,7 +99,7 @@
                   >Quantity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
                 >
               </label>
-              <!-- <input type="number" class="quantity" /> -->
+              
               <span>
                 
                 <input type="number" class="text-center" min="1" max="10" [(ngModel)]="cartitem.quantity" name="quantity" style="width: 40px;">
@@ -108,7 +108,7 @@
             </div>
             <br />
             <div class="button">
-              <button class="btn btn-outline-dark m-3" routerLink="/" (click)=" addToCart(item)">Add to Cart</button>
+              <button class="btn btn-outline-dark m-3" routerLink="." (click)=" addToCart(item)">Add to Cart</button>
               <button class="btn btn-outline-dark m-0" routerLink="/cart" (click)=" addToCart(item)">Buy Now</button>
             </div>
           </div>

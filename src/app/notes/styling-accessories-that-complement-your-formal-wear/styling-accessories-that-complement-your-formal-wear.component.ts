@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, } from '@angular/router';
-import { FormGroup, FormControl } from '@angular/forms';
-import { Validators } from '@angular/forms';
 import { ServiceService } from 'src/Services/service.service';
 
 
@@ -10,19 +8,18 @@ import { ServiceService } from 'src/Services/service.service';
   templateUrl: './styling-accessories-that-complement-your-formal-wear.component.html',
   styleUrls: ['./styling-accessories-that-complement-your-formal-wear.component.css']
 })
+
 export class StylingAccessoriesThatComplementYourFormalWearComponent implements OnInit {
-  cards:any[]=[];
-   cardid!:number
-  id!: number|any;
-   constructor(private route:ActivatedRoute,private serve:ServiceService){
-    
-   }
-  
+ 
+  constructor(private route: ActivatedRoute, private serve: ServiceService) {}
+
+  cards: any[] = [];
+  id!: number | any;
+
   ngOnInit(): void {
-    this.id=this.route.snapshot.paramMap.get('id');
-    this.serve.getNotesById(this.id).subscribe((res)=>this.cards=res)
-  
- }
+    this.id = this.route.snapshot.paramMap.get('id');
+    this.serve.getNotesById(this.id).subscribe((res) => this.cards = res)
+  }
 }
 
 

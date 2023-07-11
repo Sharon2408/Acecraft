@@ -8,7 +8,9 @@ import { Validators } from '@angular/forms';
   styleUrls: ['./feedback-form.component.css']
 })
 export class FeedbackFormComponent implements OnInit {
+  // Comments count
   val=0;
+  // form submission
   onSubmit(form: any) {
     console.log(form.value);
     return this.val++
@@ -16,10 +18,10 @@ export class FeedbackFormComponent implements OnInit {
   
   
   myForm1!: FormGroup;
-  
   username: FormControl | any;
   email: FormControl | any;
   feedback: FormControl | any;
+ 
   constructor() { }
   
   ngOnInit(): void {

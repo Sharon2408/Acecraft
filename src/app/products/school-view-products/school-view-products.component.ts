@@ -15,7 +15,6 @@ import { MessageService } from 'primeng/api';
 })
 export class SchoolViewProductsComponent implements OnInit{
 
-
   constructor(
     private productview: ServiceService,
     private router: Router,
@@ -24,11 +23,7 @@ export class SchoolViewProductsComponent implements OnInit{
     private alert:MessageService
   ) {}
 
-
   productId!: number;
-
-
-
   products:any[] = [];
 
   cartitem:cart={
@@ -40,9 +35,9 @@ export class SchoolViewProductsComponent implements OnInit{
     totalPrice:0,
     quantity:1 
   }
-  // quantity:number=1;
   size:number=28;
 
+  // add to cart function
   addToCart(item:any){
     this.cartitem.title=item.title;
     this.cartitem.img=item.imgSrc;
@@ -71,32 +66,5 @@ export class SchoolViewProductsComponent implements OnInit{
        .getProductsById(this.productId).subscribe((res)=>this.products = res);
   }
 
-
-
-  addProduct(item:any){
-    console.log(item);
-
-    // this.cart.addToCart(item);
-
-  }
-
-  value = 1
-
-  showMyProduct(productName: number) {
-    if (productName == 1 || productName < 10){
-      this.value++
-        
-      }
-      else if(productName==10){
-Swal.fire("You can Order only 10 products")
-      }
-    
-}
-
-decproduct(product: number){
-  if(product < 100 && product > 1){
-  this.value--
-  }
  
-}
 }

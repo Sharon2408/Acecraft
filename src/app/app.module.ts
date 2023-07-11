@@ -35,12 +35,11 @@ import { SchoolProdsComponent } from './products/school-prods/school-prods.compo
 import { SchoolViewProductsComponent } from './products/school-view-products/school-view-products.component';
 import { SortprodPipe } from '../shared/sortprod.pipe';
 import { ProductsortPipe } from 'src/shared/productsort.pipe';
-import { QuantityComponent } from './quantity/quantity.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-import { authGuard } from '../Gaurds/auth.guard';
+
 
 
 
@@ -65,7 +64,6 @@ import { authGuard } from '../Gaurds/auth.guard';
     SchoolViewProductsComponent,
     SortprodPipe,
     ProductsortPipe,
-    QuantityComponent,
     RegisterComponent,
     LoginComponent,
   ],

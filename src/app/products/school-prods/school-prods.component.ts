@@ -8,18 +8,16 @@ import { Router } from '@angular/router';
 })
 export class SchoolProdsComponent implements OnInit {
 
-// Input from products
+// Input from products component
 @Input() products:any;
 
-constructor(
-  private router: Router
-) {}
+constructor(private router: Router) {}
+
 ngOnInit():void {}
 
 productId!: number;
 
 // When clicked Id will get passed in the below function
-
 viewProduct(id: number) {
   this.productId = id;
   this.router.navigate(['school-prod-view/' + id]);

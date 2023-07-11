@@ -14,8 +14,6 @@ import { MessageService } from 'primeng/api';
   styleUrls: ['./login.component.css'],
 })
 
-
-
 export class LoginComponent implements OnInit {
   constructor(
     private regservice: RegisterService,
@@ -24,15 +22,15 @@ export class LoginComponent implements OnInit {
   ) {}
 
   userdata: any;
+
   myForm1!: FormGroup;
   email: FormControl | any;
   password: FormControl | any;
-
+  
+// Form Submission
   onSubmit(form: any) {
-    //console.log(form.value.email);
     this.regservice.getCred().subscribe((res) => {
       this.userdata = res;
-
       const user = this.userdata.find((a: any) => {
         if (
           a.email === this.myForm1.value.email &&
@@ -43,7 +41,7 @@ export class LoginComponent implements OnInit {
         }
         return false;
       });
-
+// To Genrate token if user is found
       if (user) {
         console.log(this.userdata.id);
         this.myForm1.reset();

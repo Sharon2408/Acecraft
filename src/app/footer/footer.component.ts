@@ -8,7 +8,7 @@ import { ServiceService } from 'src/Services/service.service';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit{
-
+// footer items
   footer:any[]=[];
   icon:any=[];
 

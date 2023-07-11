@@ -68,6 +68,7 @@ export class CartComponent implements OnInit {
   // To keep the count of the cart
   cartcount = 0;
  
+  // Stripe payment integration
   invokeStripe() {
     if (!window.document.getElementById('stripe-script')) {
       const script = window.document.createElement('script');
@@ -101,7 +102,7 @@ export class CartComponent implements OnInit {
 
 
 
-  // Quantity increase product functionality
+  // product Quantity increase functionality
   increase_product(quantity: cart) {
     
     if (quantity.quantity == 1 || quantity.quantity < 10) 
@@ -118,7 +119,7 @@ export class CartComponent implements OnInit {
     }
   }
 
-  // Quantity decrease product functionality
+  //product Quantity decrease  functionality
   decrease_product(product: cart) {
 
     if (product.quantity < 100 && product.quantity > 1) 
@@ -129,7 +130,7 @@ export class CartComponent implements OnInit {
     }
   }
 
-
+// Method invoked when Place order button clicked
   paymentHandler: any = null;
   makePayment(amount: any) {
     const paymentHandler = (<any>window).StripeCheckout.configure({
@@ -137,7 +138,6 @@ export class CartComponent implements OnInit {
       locale: 'auto',
       token: function (stripeToken: any) {
         console.log(stripeToken);
-        //alert('Stripe token generated!');
         const Toast = Swal.mixin({
           toast: true,
           position: 'top',

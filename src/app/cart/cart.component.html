@@ -37,8 +37,10 @@
         <input readonly type="text" class="text-center" value="{{x.quantity}}" style="width: 40px;">
         <i  (click)="increase_product(x)"  class="fa-solid fa-plus fa-md"></i>
     </span>
-    <!-- To Remove item in a cart  -->
-     <h4  class="ms-5">{{ x.price | currency : "INR" : "symbol" }} <br> <h6><a  style="color: red;" routerLink="." (click)="delete(x)">Remove</a></h6></h4>
+  
+     <h4  class="ms-5">{{ x.price | currency : "INR" : "symbol" }} <br>
+        <!-- To Remove item in a cart  -->
+       <h6><a  style="color: red;" routerLink="." (click)="delete(x)">Remove</a></h6></h4>
      <br>
      <!-- To show the total Price in the cart -->
      <h6>Total Price: {{ x.price*x.quantity | currency : "INR" : "symbol" }}  </h6>

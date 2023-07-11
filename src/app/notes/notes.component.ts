@@ -9,23 +9,22 @@ import { Router } from '@angular/router';
 })
 export class NotesComponent implements OnInit {
 
-  cards:any[]=[]
-  constructor (private CardContent : ServiceService, private router:Router){
+  constructor(private CardContent: ServiceService, private router: Router) { }
 
+  // To store the cards from the json
+  cards: any[] = []
+
+  // When clicked Id will get passed in the below function
+  viewNote(id: number) {
+    this.router.navigate(['notessub1/' + id]);
   }
+
   ngOnInit(): void {
     this.CardContent.getCards().subscribe(
-      (response)=>{
-        this.cards=response
+      (response) => {
+        this.cards = response
       }
     )
   }
 
-
-// When clicked Id will get passed in the bekow function
-
-viewProduct(id: number) {
-
-  this.router.navigate(['notessub1/' + id]);
-}
 }

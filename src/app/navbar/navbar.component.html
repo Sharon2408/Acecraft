@@ -67,9 +67,10 @@
   </div>
   <div></div>
 </nav>
-<!-- Side NavBar -->
+
+<!-- Side NavBar on Mobile view-->
 <p-sidebar [(visible)]="sidebarVisible">
-  <ng-template pTemplate="header" [ngStyle]="{ backgroundColor: 'var(--primary-color)' }">SHOP FOR</ng-template>
+  <ng-template pTemplate="header">SHOP FOR</ng-template>
   <ng-container *ngFor="let x of nav">
     <p class="" [routerLink]="x.routerLink" (click)="sidebarVisible=false">{{ x.navitem | uppercase }}</p>
     <hr />
@@ -82,7 +83,7 @@
     <img class="" [src]="x.icon" /></a>
 </p-sidebar>
 
-<!-- Right side bar -->
+<!-- Right side bar on mobile view -->
 <p-sidebar [(visible)]="sidebarVisible2" position="right">
   <h6 routerLink="/login" (click)="sidebarVisible2=false">Login</h6>
   <hr>
