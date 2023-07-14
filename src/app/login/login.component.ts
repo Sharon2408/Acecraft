@@ -1,10 +1,10 @@
-import { Component, OnInit,EventEmitter } from '@angular/core';
+import { Component, OnInit,EventEmitter,ViewChild,AfterViewInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { RegisterService } from 'src/Services/register.service';
 import { MessageService } from 'primeng/api';
-
+import { NavbarComponent } from '../navbar/navbar.component';
 
 
 
@@ -14,7 +14,11 @@ import { MessageService } from 'primeng/api';
   styleUrls: ['./login.component.css'],
 })
 
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit,AfterViewInit {
+  
+  @ViewChild(NavbarComponent) navbar: any;
+  
+
   constructor(
     private regservice: RegisterService,
     private router: Router,
@@ -27,6 +31,8 @@ export class LoginComponent implements OnInit {
   email: FormControl | any;
   password: FormControl | any;
   
+status:boolean=false;
+
 // Form Submission
   onSubmit(form: any) {
     this.regservice.getCred().subscribe((res) => {
@@ -54,6 +60,7 @@ export class LoginComponent implements OnInit {
           summary: 'success',
           detail: 'Login Successful',
         });
+        this.status=true;
       } else {
         this.alert.add({
           key: 'tc',
@@ -79,4 +86,10 @@ export class LoginComponent implements OnInit {
     });
     
   }
+
+
+ngAfterViewInit(): void {
+  this.status=this.navbar.status;
+}
+
 }

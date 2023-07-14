@@ -11,4 +11,5 @@ export interface Register {
   City: string;
   State: string;
   GSTNum: string;
+  isActive:boolean;
 }

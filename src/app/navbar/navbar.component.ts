@@ -37,6 +37,8 @@ export class NavbarComponent implements OnInit {
   sidebarVisible: boolean = false;
   sidebarVisible2: boolean = false;
 
+  status!:boolean;
+
   // Logout functionality
   userdata: any;
   logout() {

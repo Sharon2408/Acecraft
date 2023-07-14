@@ -17,7 +17,7 @@ export class RegisterService {
   registerurl=environment.registerurl
   
 // To post the user details
-  get_User_Details(form:any){
+  get_User_Details(form:Register){
     return this.http.post<Register[]>(this.registerurl,form);
   }
 
@@ -27,14 +27,14 @@ export class RegisterService {
   }
 
 //  To make isactive true
-  isActive(item:any,id:number){
+  isActive(item:Register,id:number){
     let reg = this.registerurl +'/'+ id
     item.isActive=true;
     return this.http.put(reg,item).subscribe(()=>{})
   }
 
   // To make isactive false
-  isDeactive(item:any,id:number){
+  isDeactive(item:Register,id:number){
     let reg = this.registerurl +'/'+ id
     item.isActive=false;
     return this.http.put(reg,item).subscribe(()=>{})

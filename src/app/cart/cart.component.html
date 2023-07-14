@@ -6,7 +6,7 @@
   
   <div class="row">
     <!-- Message to Display while the Cart is Empty -->
-    <div  style="height: 561px;" *ngIf="cartcount<1" >
+    <div class="emptycart" *ngIf="cartcount<1" >
       <ng-container>
       <h4 class="pt-5" >Your Shopping cart is Empty!</h4>
       <h5 class="pt-3" > <a routerLink="/school" class="btn btn-outline-dark">Continue shopping</a></h5>
@@ -34,13 +34,13 @@
       <!-- To increase and decrease quantity in the cart component -->
       <span>
         <i  (click)="decrease_product(x)" class="fa-solid fa-minus fa-md"></i>
-        <input readonly type="text" class="text-center" value="{{x.quantity}}" style="width: 40px;">
+        <input readonly type="text" class="text-center" value="{{x.quantity}}" width="40px">
         <i  (click)="increase_product(x)"  class="fa-solid fa-plus fa-md"></i>
     </span>
   
      <h4  class="ms-5">{{ x.price | currency : "INR" : "symbol" }} <br>
         <!-- To Remove item in a cart  -->
-       <h6><a  style="color: red;" routerLink="." (click)="delete(x)">Remove</a></h6></h4>
+       <h6><a  class="text-danger" routerLink="." (click)="delete(x)">Remove</a></h6></h4>
      <br>
      <!-- To show the total Price in the cart -->
      <h6>Total Price: {{ x.price*x.quantity | currency : "INR" : "symbol" }}  </h6>
@@ -51,11 +51,11 @@
 </div>
 </div>
 
-<div class="container" style="height: 200px;" *ngIf="cartcount>0">
+<div class="container" height="200px" *ngIf="cartcount>0">
   <div class="row">
     <div class="col-5">
       <h4 class="fw-lighter">Enter Coupon code here</h4>
-      <input type="text" style="height: 39px; width: 300px;">
+      <input type="text" height="39px" width="300px">
       <button routerLink="." class=" btn-outline-dark">Apply!</button>
     </div>
     <div class="col-3">
